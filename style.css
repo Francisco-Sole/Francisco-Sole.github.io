@@ -75,7 +75,7 @@ main {
     position: relative;
     top: 200px;
     height: calc(100vh - 200px - 80px);
-    overflow-y: auto;
+    /* overflow-y: auto; */
     padding: 20px;
     background: #f9f9f9;
 }
@@ -409,7 +409,12 @@ h2 a {
 
 .cv-block {
     margin-bottom: 2rem;
-    width: calc(100% / 3);
+    width: 40%;
+}
+
+.cv-block-small {
+    margin-bottom: 2rem;
+    width: 20%;
 }
 
 .sobre_mi-block {
@@ -475,7 +480,25 @@ h2 a {
     text-decoration: underline;
 }
 
+.btn-whatsapp {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
 
+.btn-whatsapp:hover {
+    background-color: #1ebe5d;
+}
+
+.centerButton {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
 
 
 
@@ -559,6 +582,11 @@ h2 a {
     }
 
     .cv-block {
+        margin-bottom: 2rem;
+        width: calc(100% / 1) !important;
+    }
+
+    .cv-block-small {
         margin-bottom: 2rem;
         width: calc(100% / 1) !important;
     }
