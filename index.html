@@ -1,740 +1,1119 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Portafolio - Francisco Solé</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <section id="intro-section">
-            <div class="avatar-container">
-                <img src="assets/avatar.png" alt="Francisco Solé" class="avatar">
-            </div>
-            <div class="intro">
-                <h1>Francisco Solé</h1>
-                <p>Desarrollador Full Stack | Optimización SQL | Documentación técnica</p>
-            </div>
-        </section>
-        <section id="nav-section">
-            <div class="tabs">
-                <nav>
-                    <button id="tab-proyectos" class="tab-btn" onclick="openTab('proyectos')">Proyectos</button>
-                    <button id="tab-cv" class="tab-btn" onclick="openTab('cv')">Currículum</button>
-                    <button id="tab-sobre-mi" class="tab-btn" onclick="openTab('sobre-mi')">Sobre mí</button>
-                    <button id="tab-contacto" class="tab-btn" onclick="openTab('contacto')">Contacto</button>
-                </nav>
-            </div>
-        </section>
+      <section id="intro-section">
+        <div class="avatar-container">
+          <img src="assets/avatar.png" alt="Francisco Solé" class="avatar" />
+        </div>
+        <div class="intro">
+          <h1>Francisco Solé</h1>
+          <p>
+            Desarrollador Full Stack | Optimización SQL | Documentación técnica
+          </p>
+        </div>
+      </section>
+      <section id="nav-section">
+        <div class="tabs">
+          <nav>
+            <button
+              id="tab-proyectos"
+              class="tab-btn"
+              onclick="openTab('proyectos')"
+            >
+              Proyectos
+            </button>
+            <button id="tab-cv" class="tab-btn" onclick="openTab('cv')">
+              Currículum
+            </button>
+            <button
+              id="tab-sobre-mi"
+              class="tab-btn"
+              onclick="openTab('sobre-mi')"
+            >
+              Sobre mí
+            </button>
+            <button
+              id="tab-contacto"
+              class="tab-btn"
+              onclick="openTab('contacto')"
+            >
+              Contacto
+            </button>
+          </nav>
+        </div>
+      </section>
     </header>
 
     <main>
-        <!-- Proyectos -->
-        <section id="proyectos" class="tab-content active">
-            <h2><img src="assets/icons/herramientas.png" alt="Proyectos" title="Vista de proyectos" height="36">
-                Proyectos</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>Backupator</h3>
-                    <p><i>Backupator</i> es una suite de respaldo automatizado para bases de datos MySQL que integra
-                        exportación, limpieza y compresión en un solo flujo de trabajo.
-                    </p>
-                    <p>Cuenta con una interfaz web con
-                        métricas y gráficos en tiempo real, lo que facilita la monitorización y la gestión de copias de
-                        seguridad de forma visual y eficiente.
-                    </p>
-                    <div class="screenshot">
-                        <img src="assets/screenshots/backupator.png" alt="Backupator">
-                    </div>
-                    <div class="badges">
-                        <div class="badge-icon"><img src="assets/badges/PHP.png" alt="PHP" title="PHP"></div>
-                        <div class="badge-icon"><img src="assets/badges/mySql.png" alt="MySQL" title="MySQL"></div>
-                        <div class="badge-icon"><img src="assets/badges/JS.png" alt="JavaScript" title="JavaScript">
-                        </div>
-                        <div class="badge-icon"><img src="assets/badges/HTML5.png" alt="HTML5" title="HTML 5"></div>
-                        <div class="badge-icon"><img src="assets/badges/CSS3.png" alt="CSS3" title="CSS 3"></div>
-
-                    </div>
-                    <div class="links">
-                        <a href="https://github.com/Francisco-Sole/backupator" target="_blank">Ver en GitHub</a>
-                        <a href="https://demo.backupator.com" target="_blank">Ver demo</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h3>Planifica</h3>
-                    <p><i>Planifica</i> es una aplicación web en PHP que ofrece un calendario interactivo para
-                        gestionar
-                        reservas de salas de manera sencilla y organizada.
-                    </p>
-                    <p>Permite visualizar la disponibilidad, crear y
-                        administrar reservas en tiempo real, facilitando la planificación de espacios
-                        compartidos.
-                    </p>
-                    <div class="screenshot">
-                        <img src="assets/screenshots/planify.png" alt="Planifica">
-                    </div>
-                    <div class="badges">
-                        <div class="badge-icon"><img src="assets/badges/PHP.png" alt="PHP" title="PHP"></div>
-                        <div class="badge-icon"><img src="assets/badges/mySql.png" alt="MySQL" title="MySQL"></div>
-                        <div class="badge-icon"><img src="assets/badges/JS.png" alt="JavaScript" title="JavaScript">
-                        </div>
-                        <div class="badge-icon"><img src="assets/badges/HTML5.png" alt="HTML5" title="HTML 5"></div>
-                        <div class="badge-icon"><img src="assets/badges/CSS3.png" alt="CSS3" title="CSS 3"></div>
-                    </div>
-                    <div class="links">
-                        <a href="https://github.com/Francisco-Sole/planifica" target="_blank">Ver en GitHub</a>
-                        <a href="https://demo.planifica.com">Ver demo</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h3>Control presencia</h3>
-                    <p><i>Control Presencia</i> es una aplicación web en PHP y JavaScript diseñada para
-                        registrar y
-                        gestionar la asistencia de usuarios.
-                    </p>
-                    <p>Incluye un calendario interactivo, formularios de control y una interfaz visual que
-                        facilita el
-                        seguimiento de entradas y salidas en tiempo real.
-                    </p>
-                    <div class="screenshot">
-                        <img src="assets/screenshots/control_presencia.png" alt="Control Presencia">
-                    </div>
-                    <div class="badges">
-                        <div class="badge-icon"><img src="assets/badges/PHP.png" alt="PHP" title="PHP"></div>
-                        <div class="badge-icon"><img src="assets/badges/mySql.png" alt="MySQL" title="MySQL"></div>
-                        <div class="badge-icon"><img src="assets/badges/JS.png" alt="JavaScript" title="JavaScript">
-                        </div>
-                        <div class="badge-icon"><img src="assets/badges/HTML5.png" alt="HTML5" title="HTML 5"></div>
-                        <div class="badge-icon"><img src="assets/badges/CSS3.png" alt="CSS3" title="CSS 3"></div>
-                    </div>
-                    <div class="links">
-                        <a href="https://github.com/Francisco-Sole/control_presencia" target="_blank">Ver en GitHub</a>
-                        <a href="https://demo.control-presencia.com">Ver demo</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h3>Fototeca</h3>
-                    <p><i>Fototeca</i> es una aplicación sencilla en PHP para subir, visualizar y almacenar
-                        fotos
-                        localmente.
-                    </p>
-                    <p>
-                        Ideal para proyectos caseros, documentación visual o gestión de imágenes sin depender de
-                        servicios externos.
-                    </p>
-                    <div class="screenshot">
-                        <img src="assets/screenshots/fototeca.png" alt="Fototeca">
-                    </div>
-                    <div class="badges">
-                        <div class="badge-icon"><img src="assets/badges/PHP.png" alt="PHP" title="PHP"></div>
-                        <div class="badge-icon"><img src="assets/badges/mySql.png" alt="MySQL" title="MySQL"></div>
-                        <div class="badge-icon"><img src="assets/badges/JS.png" alt="JavaScript" title="JavaScript">
-                        </div>
-                        <div class="badge-icon"><img src="assets/badges/HTML5.png" alt="HTML5" title="HTML 5"></div>
-                        <div class="badge-icon"><img src="assets/badges/CSS3.png" alt="CSS3" title="CSS 3"></div>
-                    </div>
-                    <div class="links">
-                        <a href="https://github.com/Francisco-Sole/fototeca" target="_blank">Ver en GitHub</a>
-                        <a href="https://demo.fototeca.com">Ver demo</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h3>Control maestro</h3>
-                    <p><i>Control maestro</i> facilita la administración de equipos en red local desde un único
-                        panel
-                        web.
-                    </p>
-                    <p>
-                        Con funciones de apagado remoto, encendido por Wake‑on‑LAN y trazabilidad de acciones,
-                        simplifica
-                        la gestión de entornos compartidos en oficinas, aulas o laboratorios.
-                    </p>
-                    <div class="screenshot">
-                        <img src="assets/screenshots/control_maestro.png" alt="Control Maestro">
-                    </div>
-                    <div class="badges">
-                        <div class="badge-icon"><img src="assets/badges/PHP.png" alt="PHP" title="PHP"></div>
-                        <div class="badge-icon"><img src="assets/badges/mySql.png" alt="MySQL" title="MySQL"></div>
-                        <div class="badge-icon"><img src="assets/badges/JS.png" alt="JavaScript" title="JavaScript">
-                        </div>
-                        <div class="badge-icon"><img src="assets/badges/HTML5.png" alt="HTML5" title="HTML 5"></div>
-                        <div class="badge-icon"><img src="assets/badges/CSS3.png" alt="CSS3" title="CSS 3"></div>
-                        <div class="badge-icon"><img src="assets/badges/bash.png" alt="Bash" title="Bash"></div>
-                    </div>
-                    <div class="links">
-                        <a href="https://github.com/Francisco-Sole/control_maestro" target="_blank">Ver en GitHub</a>
-                        <a href="https://demo.control-maestro.com">Ver demo</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h3>Tablify</h3>
-                    <p><i>Tablify</i> es una solución web que facilita la gestión de empleados y recursos
-                        mediante un
-                        calendario y tablas interactivas.
-                    </p>
-                    <p>
-                        Con filtros, buscadores y menús dinámicos, permite visualizar
-                        y administrar datos de forma intuitiva, mejorando la experiencia de usuario y la
-                        eficiencia en
-                        la gestión diaria.
-                    </p>
-                    <div class="screenshot">
-                        <img src="assets/screenshots/tablify.png" alt="Tablify">
-                    </div>
-                    <div class="badges">
-                        <div class="badge-icon"><img src="assets/badges/PHP.png" alt="PHP" title="PHP"></div>
-                        <div class="badge-icon"><img src="assets/badges/mySql.png" alt="MySQL" title="MySQL"></div>
-                        <div class="badge-icon"><img src="assets/badges/JS.png" alt="JavaScript" title="JavaScript">
-                        </div>
-                        <div class="badge-icon"><img src="assets/badges/HTML5.png" alt="HTML5" title="HTML 5"></div>
-                        <div class="badge-icon"><img src="assets/badges/CSS3.png" alt="CSS3" title="CSS 3"></div>
-                    </div>
-                    <div class="links">
-                        <a href="https://github.com/Francisco-Sole/tablify" target="_blank">Ver en GitHub</a>
-                        <a href="https://demo.tablify.com">Ver demo</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h3>I-time</h3>
-                    <p><i>I-time</i>i-time facilita el seguimiento de la producción y la gestión de tiempos de
-                        trabajo
-                        en equipos.
-                    </p>
-                    <p>
-                        Con login de empleados, registro detallado de horas y conexión a un módulo de
-                        analítica, ayuda a optimizar procesos y visualizar la productividad de forma clara y
-                        estructurada.
-                    </p>
-                    <div class="screenshot">
-                        <img src="assets/screenshots/i-time.png" alt="I-time">
-                    </div>
-                    <div class="badges">
-                        <div class="badge-icon"><img src="assets/badges/PHP.png" alt="PHP" title="PHP"></div>
-                        <div class="badge-icon"><img src="assets/badges/mySql.png" alt="MySQL" title="MySQL"></div>
-                        <div class="badge-icon"><img src="assets/badges/JS.png" alt="JavaScript" title="JavaScript">
-                        </div>
-                        <div class="badge-icon"><img src="assets/badges/HTML5.png" alt="HTML5" title="HTML 5"></div>
-                        <div class="badge-icon"><img src="assets/badges/CSS3.png" alt="CSS3" title="CSS 3"></div>
-                    </div>
-                    <div class="links">
-                        <a href="https://github.com/Francisco-Sole/i-time" target="_blank">Ver en GitHub</a>
-                        <a href="https://demo.i-time.com">Ver demo</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h3>I-timeGraph</h3>
-                    <p><i>I-timeGraph</i>convierte los registros de producción en información visual clara y
-                        accesible.
-                    </p>
-                    <p>
-                        Con gráficos interactivos y filtros en tiempo real, facilita la toma de decisiones y el
-                        seguimiento de la productividad en equipos y proyectos.
-                    </p>
-                    <div class="screenshot">
-                        <img src="assets/screenshots/i-timegraph.png" alt="I-timeGraph">
-                    </div>
-                    <div class="badges">
-                        <div class="badge-icon"><img src="assets/badges/PHP.png" alt="PHP" title="PHP"></div>
-                        <div class="badge-icon"><img src="assets/badges/mySql.png" alt="MySQL" title="MySQL"></div>
-                        <div class="badge-icon"><img src="assets/badges/JS.png" alt="JavaScript" title="JavaScript">
-                        </div>
-                        <div class="badge-icon"><img src="assets/badges/HTML5.png" alt="HTML5" title="HTML 5"></div>
-                        <div class="badge-icon"><img src="assets/badges/CSS3.png" alt="CSS3" title="CSS 3"></div>
-                    </div>
-                    <div class="links">
-                        <a href="https://github.com/Francisco-Sole/i-timegraph" target="_blank">Ver en GitHub</a>
-                        <a href="https://demo.i-timegraph.com">Ver demo</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h3>Tanke</h3>
-                    <p><i>Tanke</i> es un juego multijugador en tiempo real desarrollado con Node.js y Socket.IO,
-                        donde
-                        dos jugadores se enfrentan controlando tanques en un escenario compartido.
-                    </p>
-                    <p>
-                        Incluye disparos,
-                        detección de colisiones y un sistema de mejora de parámetros (velocidad, cadencia, vida)
-                        que
-                        añade estrategia a cada partida.
-                    </p>
-                    <div class="screenshot">
-                        <img src="assets/screenshots/tanke.png" alt="Tanke">
-                    </div>
-                    <div class="badges">
-                        <div class="badge-icon"><img src="assets/badges/JS.png" alt="JavaScript" title="JavaScript">
-                        </div>
-                        <div class="badge-icon"><img src="assets/badges/HTML5.png" alt="HTML5" title="HTML 5"></div>
-                    </div>
-                    <div class="links">
-                        <a href="https://github.com/Francisco-Sole/tanke" target="_blank">Ver en GitHub</a>
-                        <a href="https://tanke.onrender.com/">Ver demo</a>
-                    </div>
-                </div>
-
-
-                <div class="card">
-                    <h3>Test Trello</h3>
-                    <p><i>Test Trello</i> es un ejercicio práctico para explorar la colaboración en tiempo real
-                        con
-                        Node.js y Socket.IO.
-                    </p>
-                    <p>
-                        Permite crear y actualizar elementos en un tablero compartido, simulando la
-                        experiencia de trabajo en equipo en una aplicación web moderna.
-                    </p>
-                    <div class="screenshot">
-                        <img src="assets/screenshots/test_trello.png" alt="Test Trello">
-                    </div>
-                    <div class="badges">
-                        <div class="badge-icon"><img src="assets/badges/node.png" alt="Node.js" title="Node.js"></div>
-                        <div class="badge-icon"><img src="assets/badges/mongo.png" alt="MongoDB" title="MongoDB"></div>
-                        <div class="badge-icon"><img src="assets/badges/JS.png" alt="JavaScript" title="JavaScript">
-                        </div>
-                        <div class="badge-icon"><img src="assets/badges/HTML5.png" alt="HTML5" title="HTML 5">
-                        </div>
-                        <div class="badge-icon"><img src="assets/badges/CSS3.png" alt="CSS3" title="CSS 3">
-                        </div>
-                    </div>
-                    <div class="links">
-                        <a href="https://github.com/Francisco-Sole/test-trello" target="_blank">Ver en GitHub</a>
-                        <a href="https://demo.test-trello.com">Ver demo</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h3>Reloj Analógo</h3>
-                    <p><i>Relej Analógo</i>es un control visual que añade un reloj analógico dinámico a
-                        cualquier
-                        aplicación de escritorio.
-                    </p>
-                    <p>
-                        Con opciones de personalización y actualización automática, mejora la
-                        experiencia de usuario en proyectos WinForms.
-                    </p>
-                    <div class="screenshot">
-                        <img src="assets/screenshots/reloj_analogo.png" alt="Reloj Analógico">
-                    </div>
-                    <div class="badges">
-                        <div class="badge-icon"><img src="assets/badges/net.png" alt=".NET" title=".NET"></div>
-                        <div class="badge-icon"><img src="assets/badges/access.png" alt="Access" title="Access"></div>
-                    </div>
-                    <div class="links">
-                        <a href="https://github.com/Francisco-Sole/reloj-analogo" target="_blank">Ver en GitHub</a>
-                        <a href="https://demo.reloj-analogo.com">Ver demo</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h3>Control Fuel</h3>
-                    <p><i>Control Fuel</i>
-                        es una solución de gestión de flotas que centraliza el control de mantenimiento,
-                        sanciones,
-                        viajes e informes en una sola aplicación.
-                    </p>
-                    <p>
-                        El proyecto se entregó en producción, pero aquí se
-                        muestra únicamente la beta como referencia de desarrollo.
-                    </p>
-                    <div class="screenshot">
-                        <img src="assets/screenshots/control_fuel.png" alt="Control Fuel">
-                    </div>
-                    <div class="badges">
-                        <div class="badge-icon"><img src="assets/badges/net.png" alt=".NET" title=".NET"></div>
-                        <div class="badge-icon"><img src="assets/badges/access.png" alt="Access" title="Access"></div>
-                    </div>
-                    <div class="links">
-                        <a href="https://github.com/Francisco-Sole/control-fuel" target="_blank">Ver en GitHub</a>
-                        <a href="https://demo.control-fuel.com">Ver demo</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h3>Control Almacen</h3>
-                    <p><i>Control Almacen</i>
-                        Control Almacén centraliza la gestión de productos, bultos y usuarios en un único
-                        sistema de
-                        escritorio.
-                    </p>
-                    <p>
-                        Con soporte para imágenes, trazabilidad de operaciones e informes, facilita la
-                        organización y el control de inventario en almacenes de cualquier tamaño.
-                    </p>
-                    <div class="screenshot">
-                        <img src="assets/screenshots/control_almacen.png" alt="Control Almacén">
-                    </div>
-                    <div class="badges">
-                        <div class="badge-icon"><img src="assets/badges/net.png" alt=".NET" title=".NET"></div>
-                        <div class="badge-icon"><img src="assets/badges/access.png" alt="Access" title="Access"></div>
-                    </div>
-                    <div class="links">
-                        <a href="https://github.com/Francisco-Sole/control-almacen" target="_blank">Ver en GitHub</a>
-                        <a href="https://demo.control-almacen.com">Ver demo</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h3>Web socket (NodeMCU)</h3>
-                    <p><i>Web socket Access Point</i> es un prototipo educativo de IoT que permite controlar
-                        dispositivos desde el navegador sin necesidad de router externo.
-                    </p>
-                    <p>
-                        Con una interfaz web sencilla y
-                        personalizable, demuestra cómo integrar hardware y software en proyectos conectados.
-                    </p>
-                    <div class="screenshot">
-                        <img src="assets/screenshots/web_socket.png" alt="Web Socket">
-                    </div>
-                    <div class="badges">
-                        <div class="badge-icon"><img src="assets/badges/c.png" alt="C#" title="C#"></div>
-                    </div>
-                    <div class="links">
-                        <a href="https://github.com/Francisco-Sole/web_socket-NODEMCU" target="_blank">Ver en GitHub</a>
-                        <a href="https://demo.web_socket-NODEMCU.com">Ver demo</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h3>Control Consumo</h3>
-                    <p><i>Control Consumo</i> es una herramienta ligera para el seguimiento de consumos
-                        en entornos domésticos o empresariales.
-                    </p>
-                    <p>
-                        Con reportes variados y almacenamiento en Access,
-                        facilita la detección de tendencias y el control de gastos de forma intuitiva.
-                    </p>
-                    <div class="screenshot">
-                        <img src="assets/screenshots/control_consumo.png" alt="Control Consumo">
-                    </div>
-                    <div class="badges">
-                        <div class="badge-icon"><img src="assets/badges/net.png" alt=".NET" title=".NET"></div>
-                        <div class="badge-icon"><img src="assets/badges/access.png" alt="Access" title="Access"></div>
-                    </div>
-                    <div class="links">
-                        <a href="https://github.com/Francisco-Sole/control-consumo" target="_blank">Ver en GitHub</a>
-                        <a href="https://demo.control-consumo.com">Ver demo</a>
-                    </div>
-                </div>
-
+      <!-- Proyectos -->
+      <section id="proyectos" class="tab-content active">
+        <h2>
+          <img
+            src="assets/icons/herramientas.png"
+            alt="Proyectos"
+            title="Vista de proyectos"
+            height="36"
+          />
+          Proyectos
+        </h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Backupator</h3>
+            <p>
+              <i>Backupator</i> es una suite de respaldo automatizado para bases
+              de datos MySQL que integra exportación, limpieza y compresión en
+              un solo flujo de trabajo.
+            </p>
+            <p>
+              Cuenta con una interfaz web con métricas y gráficos en tiempo
+              real, lo que facilita la monitorización y la gestión de copias de
+              seguridad de forma visual y eficiente.
+            </p>
+            <div class="screenshot">
+              <img src="assets/screenshots/backupator.png" alt="Backupator" />
             </div>
-        </section>
-
-        <!-- CV -->
-        <section id="cv" class="tab-content">
-            <h2><img src="assets/icons/documento.png" alt="CV" height="36"> Currículum <a
-                    href="assets/CV_Francisco_Sole.pdf" download class="btn">(Descargar CV Normal)</a><a
-                    href="assets/CV_Francisco_Sole_ATS.pdf" download class="btn">(Descargar CV ATS)</a></h2>
-            <div id="divCv">
-                <!-- Experiencia profesional -->
-                <div class="cv-block">
-                    <h3>Experiencia Profesional</h3>
-
-                    <div class="cv-item">
-                        <span class="cv-date">2016 – Actualidad</span>
-                        <h4>Impackta / WeSherp (Grupo empresarial)</h4>
-                        <p><strong>Desarrollador IT Full Stack</strong></p>
-                        <p>Evolución desde soporte técnico hasta desarrollador IT, participando en el desarrollo de
-                            un SaaS logístico con <span class="badge">React</span> <span class="badge">Node.js</span>
-                            <span class="badge">SQL</span>.
-                        </p>
-                    </div>
-                    <hr>
-                    <div class="cv-item">
-                        <span class="cv-date">2019 – Actualidad</span>
-                        <h4>SolucionesSole</h4>
-                        <p><strong>Fundador · Desarrollo de soluciones tecnológicas</strong></p>
-                        <p>Creación de proyectos propios en <span class="badge">PHP</span> <span
-                                class="badge">MySQL</span>
-                            <span class="badge">JavaScript</span>, orientados a la
-                            automatización y gestión de datos.
-                        </p>
-                    </div>
-                    <hr>
-
-                    <div class="cv-item">
-                        <span class="cv-date">2012 – 2016</span>
-                        <h4>Enimuss & G.E.S</h4>
-                        <p><strong>Desarrollador Web y Desktop</strong></p>
-                        <p>Proyectos en <span class="badge">.NET</span> <span class="badge">PHP</span> <span
-                                class="badge">SQL Server</span>, incluyendo aplicaciones de escritorio y sitios web
-                            corporativos.</p>
-                    </div>
-                    <hr>
-
-                    <div class="cv-item">
-                        <span class="cv-date">2012 – 2014</span>
-                        <h4>Telepizza S.A.U.</h4>
-                        <p><strong>Encargado de operaciones y personal</strong></p>
-                        <p>Gestión de equipos, operaciones diarias y optimización de procesos internos.</p>
-                    </div>
-                    <hr>
-
-                    <div class="cv-item">
-                        <span class="cv-date">2007 – 2010</span>
-                        <h4>Reymatex S.A.</h4>
-                        <p><strong>Producción y programación de maquinaria industrial</strong></p>
-                        <p>Automatización de procesos industriales y programación de maquinaria especializada.</p>
-                    </div>
-                    <hr>
-
-                </div>
-
-                <!-- Formación -->
-                <div class="cv-block">
-                    <h3>Formación Académica</h3>
-
-                    <div class="cv-item">
-                        <span class="cv-date">2025 – Actualidad</span>
-                        <h4>University of Helsinki</h4>
-                        <p><strong>Full Stack Open</strong> · Desarrollo web moderno con <span
-                                class="badge">React</span>
-                            <span class="badge">Node.js</span> <span class="badge">REST API</span>.
-                        </p>
-                    </div>
-                    <hr>
-
-                    <div class="cv-item">
-                        <span class="cv-date">2020 – 2020</span>
-                        <h4>Curso de Inglés (200 horas)</h4>
-                        <p>Formación intensiva en competencias lingüísticas - <span class="badge">Inglés</span></p>
-                    </div>
-                    <hr>
-
-                    <div class="cv-item">
-                        <span class="cv-date">2014 – 2016</span>
-                        <h4>Grado Superior en Desarrollo de Aplicaciones Web</h4>
-                        <p>Anna Ravell, Hospitalet. Especialización en <span class="badge">HTML</span> <span
-                                class="badge">CSS</span> <span class="badge">JavaScript</span> <span
-                                class="badge">PHP</span> <span class="badge">SQL</span>.</p>
-                    </div>
-                    <hr>
-
-                </div>
-
-                <!-- Habilidades -->
-                <div class="cv-block-small">
-                    <h3>Habilidades Técnicas</h3>
-                    <p>
-                        <span class="badge">React</span>
-                        <span class="badge">Node.js</span>
-                        <span class="badge">PHP</span>
-                        <span class="badge">MySQL</span>
-                        <span class="badge">SQL Server</span>
-                        <span class="badge">VB.NET</span>
-                        <span class="badge">Socket.IO</span>
-                        <span class="badge">IoT (ESP8266)</span>
-                        <span class="badge">Linux</span>
-                        <span class="badge">Git</span>
-                        <span class="badge">REST API</span>
-                        <span class="badge">JavaScript</span>
-                        <span class="badge">HTML5</span>
-                        <span class="badge">CSS3</span>
-                        <span class="badge">C#</span>
-                        <span class="badge">C</span>
-                        <span class="badge">Access</span>
-                        <span class="badge">MongoDB</span>
-                        <span class="badge">jQuery</span>
-                        <span class="badge">AJAX</span>
-                        <span class="badge">JSON</span>
-                        <span class="badge">XML</span>
-                        <span class="badge">PL/SQL</span>
-                        <span class="badge">Bash</span>
-                        <span class="badge">Inglés B1</span>
-                    </p>
-                </div>
+            <div class="badges">
+              <div class="badge-icon">
+                <img src="assets/badges/PHP.png" alt="PHP" title="PHP" />
+              </div>
+              <div class="badge-icon">
+                <img src="assets/badges/mySql.png" alt="MySQL" title="MySQL" />
+              </div>
+              <div class="badge-icon">
+                <img
+                  src="assets/badges/JS.png"
+                  alt="JavaScript"
+                  title="JavaScript"
+                />
+              </div>
+              <div class="badge-icon">
+                <img src="assets/badges/HTML5.png" alt="HTML5" title="HTML 5" />
+              </div>
+              <div class="badge-icon">
+                <img src="assets/badges/CSS3.png" alt="CSS3" title="CSS 3" />
+              </div>
             </div>
-        </section>
-
-        <!-- Sobre mí -->
-        <section id="sobre-mi" class="tab-content">
-            <div id="divSobre-mi">
-                <div class="sobre_mi-block">
-                    <h2><img src="assets/icons/informacion.png" alt="sobre mí" height="36"> Sobre mí</h2>
-                    <p>Soy <strong>Francisco Solé González</strong>, desarrollador IT y full stack con más de 9 años de
-                        experiencia en proyectos web, desktop y SaaS logísticos.
-                        Mi trayectoria empezó en el soporte técnico y ha evolucionado hasta el desarrollo de soluciones
-                        completas con <strong>React</strong>, <strong>Node.js</strong> y <strong>SQL</strong>.</p>
-
-                    <p>Me apasiona la <strong>documentación clara</strong>, la <strong>optimización de procesos</strong>
-                        y
-                        la
-                        <strong>experiencia de usuario</strong>.
-                        Disfruto trabajando en proyectos donde la parte visual y la técnica se combinan para crear
-                        productos
-                        útiles y bien presentados.
-                    </p>
-
-                    <p>Además de mi experiencia en empresas como <strong>Impackta</strong> y <strong>WeSherp</strong>,
-                        fundé
-                        mi
-                        propia empresa tecnológica,
-                        <strong>SolucionesSole</strong>, lo que me dio una visión global del ciclo de vida de los
-                        proyectos
-                        y la
-                        importancia de la autenticidad en cada paso.
-                    </p>
-
-                    <p>Actualmente sigo ampliando mi formación en la <strong>Universidad</strong> y en el programa
-                        <strong>Full
-                            Stack Open</strong> de la University of Helsinki,
-                        convencido de que la mejora continua es la clave para crecer como profesional.
-                    </p>
-
-                    <p>Más allá del software, me interesa la <strong>electrónica y la microelectrónica</strong>.
-                        Disfruto experimentando con <strong>Arduino</strong>, <strong>Raspberry Pi</strong> y
-                        microcontroladores, integrando hardware y software en proyectos educativos y personales.
-                        Esta faceta me permite explorar la tecnología desde una perspectiva más creativa y práctica.</p>
-                </div>
-                <div class="sobre_mi-block cv-timeline">
-                    <h2 style="margin-top: 35px;">Mi trayectoria</h2>
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-date">2025</div>
-                            <div class="timeline-content">
-                                <h3>University of Helsinki</h3>
-                                <p>Inicio del programa <strong>Full Stack Open</strong>, centrado en desarrollo web
-                                    moderno
-                                    con JavaScript, React y Node.js.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-date">2025</div>
-                            <div class="timeline-content">
-                                <h3>WeSherp</h3>
-                                <p>Más de 9 años en el grupo empresarial (Impackta / WeSherp), evolucionando hasta
-                                    desarrollador IT en un SaaS logístico con React y Node.js.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-date">2019</div>
-                            <div class="timeline-content">
-                                <h3>Fundación de SolucionesSole</h3>
-                                <p>Creación de una empresa propia de soluciones tecnológicas para pymes.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-date">2016</div>
-                            <div class="timeline-content">
-                                <h3>Impackta</h3>
-                                <p>Desarrollador de software en proyectos de gestión logística y envíos.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-date">2016</div>
-                            <div class="timeline-content">
-                                <h3>Finalización de estudios</h3>
-                                <p>Graduado Superior en Desarrollo de Aplicaciones Web (DAW).</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-date">2012 – 2016</div>
-                            <div class="timeline-content">
-                                <h3>Enimuss & G.E.S</h3>
-                                <p>Desarrollador web y desktop en .NET y PHP.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-date">2012 – 2014</div>
-                            <div class="timeline-content">
-                                <h3>Telepizza</h3>
-                                <p>Encargado de tienda, gestión de personal y coordinación de operaciones.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-date">2007 – 2011</div>
-                            <div class="timeline-content">
-                                <h3>Reymatex</h3>
-                                <p>Producción y programación de maquinaria industrial textil.</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
+            <div class="links">
+              <a
+                href="https://github.com/Francisco-Sole/backupator"
+                target="_blank"
+                >Ver en GitHub</a
+              >
+              <a href="https://demo.backupator.com" target="_blank">Ver demo</a>
             </div>
+          </div>
 
-        </section>
+          <div class="card">
+            <h3>Planifica</h3>
+            <p>
+              <i>Planifica</i> es una aplicación web en PHP que ofrece un
+              calendario interactivo para gestionar reservas de salas de manera
+              sencilla y organizada.
+            </p>
+            <p>
+              Permite visualizar la disponibilidad, crear y administrar reservas
+              en tiempo real, facilitando la planificación de espacios
+              compartidos.
+            </p>
+            <div class="screenshot">
+              <img src="assets/screenshots/planify.png" alt="Planifica" />
+            </div>
+            <div class="badges">
+              <div class="badge-icon">
+                <img src="assets/badges/PHP.png" alt="PHP" title="PHP" />
+              </div>
+              <div class="badge-icon">
+                <img src="assets/badges/mySql.png" alt="MySQL" title="MySQL" />
+              </div>
+              <div class="badge-icon">
+                <img
+                  src="assets/badges/JS.png"
+                  alt="JavaScript"
+                  title="JavaScript"
+                />
+              </div>
+              <div class="badge-icon">
+                <img src="assets/badges/HTML5.png" alt="HTML5" title="HTML 5" />
+              </div>
+              <div class="badge-icon">
+                <img src="assets/badges/CSS3.png" alt="CSS3" title="CSS 3" />
+              </div>
+            </div>
+            <div class="links">
+              <a
+                href="https://github.com/Francisco-Sole/planifica"
+                target="_blank"
+                >Ver en GitHub</a
+              >
+              <a href="https://demo.planifica.com">Ver demo</a>
+            </div>
+          </div>
 
-        <!-- Contacto -->
-        <section id="contacto" class="contact-section tab-content">
-            <h2><img src="./assets/icons/contacto.png" alt="Contacto" height="36px"> Contacto</h2>
-            <p>Puedes ponerte en contacto conmigo a través de los siguientes medios:</p>
+          <div class="card">
+            <h3>Control presencia</h3>
+            <p>
+              <i>Control Presencia</i> es una aplicación web en PHP y JavaScript
+              diseñada para registrar y gestionar la asistencia de usuarios.
+            </p>
+            <p>
+              Incluye un calendario interactivo, formularios de control y una
+              interfaz visual que facilita el seguimiento de entradas y salidas
+              en tiempo real.
+            </p>
+            <div class="screenshot">
+              <img
+                src="assets/screenshots/control_presencia.png"
+                alt="Control Presencia"
+              />
+            </div>
+            <div class="badges">
+              <div class="badge-icon">
+                <img src="assets/badges/PHP.png" alt="PHP" title="PHP" />
+              </div>
+              <div class="badge-icon">
+                <img src="assets/badges/mySql.png" alt="MySQL" title="MySQL" />
+              </div>
+              <div class="badge-icon">
+                <img
+                  src="assets/badges/JS.png"
+                  alt="JavaScript"
+                  title="JavaScript"
+                />
+              </div>
+              <div class="badge-icon">
+                <img src="assets/badges/HTML5.png" alt="HTML5" title="HTML 5" />
+              </div>
+              <div class="badge-icon">
+                <img src="assets/badges/CSS3.png" alt="CSS3" title="CSS 3" />
+              </div>
+            </div>
+            <div class="links">
+              <a
+                href="https://github.com/Francisco-Sole/control_presencia"
+                target="_blank"
+                >Ver en GitHub</a
+              >
+              <a href="https://demo.control-presencia.com">Ver demo</a>
+            </div>
+          </div>
 
-            <ul class="contact-list">
-                <li><img src="./assets/icons/email.png" alt="Email" height="24px">
-                    <a href="mailto:SRSOLE30687@GMAIL.COM">SRSOLE30687@GMAIL.COM</a>
-                </li>
-                <li><img src="./assets/icons/telefono-movil.png" alt="Teléfono" height="24px">
-                    <a href="tel:+34633823006">+34 633 82 30 06</a>
-                </li>
-                <li><img src="./assets/icons/linkedin.png" alt="LinkedIn" height="24px">
-                    <a href="https://www.linkedin.com/in/francisco-sole-gonzalez-perfil-publico"
-                        target="_blank">linkedin.com/in/francisco-sole</a>
-                </li>
-                <li><img src="./assets/icons/github.png" alt="GitHub" height="24px">
-                    <a href="https://github.com/Francisco-Sole" target="_blank">github.com/Francisco-Sole</a>
-                </li>
-                <li>
-                    <a class="centerButton"
-                        href="https://wa.me/34633823006?text=Hola%20Francisco,%20he%20visto%20tu%20portafolio"
-                        target="_blank" class="btn-whatsapp">
-                        <img src="./assets/icons/social.png" alt="WhatsApp" height="24px">
-                        Escríbeme por WhatsApp
-                    </a>
-                </li>
-            </ul>
-        </section>
+          <div class="card">
+            <h3>Fototeca</h3>
+            <p>
+              <i>Fototeca</i> es una aplicación sencilla en PHP para subir,
+              visualizar y almacenar fotos localmente.
+            </p>
+            <p>
+              Ideal para proyectos caseros, documentación visual o gestión de
+              imágenes sin depender de servicios externos.
+            </p>
+            <div class="screenshot">
+              <img src="assets/screenshots/fototeca.png" alt="Fototeca" />
+            </div>
+            <div class="badges">
+              <div class="badge-icon">
+                <img src="assets/badges/PHP.png" alt="PHP" title="PHP" />
+              </div>
+              <div class="badge-icon">
+                <img src="assets/badges/mySql.png" alt="MySQL" title="MySQL" />
+              </div>
+              <div class="badge-icon">
+                <img
+                  src="assets/badges/JS.png"
+                  alt="JavaScript"
+                  title="JavaScript"
+                />
+              </div>
+              <div class="badge-icon">
+                <img src="assets/badges/HTML5.png" alt="HTML5" title="HTML 5" />
+              </div>
+              <div class="badge-icon">
+                <img src="assets/badges/CSS3.png" alt="CSS3" title="CSS 3" />
+              </div>
+            </div>
+            <div class="links">
+              <a
+                href="https://github.com/Francisco-Sole/fototeca"
+                target="_blank"
+                >Ver en GitHub</a
+              >
+              <a href="https://demo.fototeca.com">Ver demo</a>
+            </div>
+          </div>
 
+          <div class="card">
+            <h3>Control maestro</h3>
+            <p>
+              <i>Control maestro</i> facilita la administración de equipos en
+              red local desde un único panel web.
+            </p>
+            <p>
+              Con funciones de apagado remoto, encendido por Wake‑on‑LAN y
+              trazabilidad de acciones, simplifica la gestión de entornos
+              compartidos en oficinas, aulas o laboratorios.
+            </p>
+            <div class="screenshot">
+              <img
+                src="assets/screenshots/control_maestro.png"
+                alt="Control Maestro"
+              />
+            </div>
+            <div class="badges">
+              <div class="badge-icon">
+                <img src="assets/badges/PHP.png" alt="PHP" title="PHP" />
+              </div>
+              <div class="badge-icon">
+                <img src="assets/badges/mySql.png" alt="MySQL" title="MySQL" />
+              </div>
+              <div class="badge-icon">
+                <img
+                  src="assets/badges/JS.png"
+                  alt="JavaScript"
+                  title="JavaScript"
+                />
+              </div>
+              <div class="badge-icon">
+                <img src="assets/badges/HTML5.png" alt="HTML5" title="HTML 5" />
+              </div>
+              <div class="badge-icon">
+                <img src="assets/badges/CSS3.png" alt="CSS3" title="CSS 3" />
+              </div>
+              <div class="badge-icon">
+                <img src="assets/badges/bash.png" alt="Bash" title="Bash" />
+              </div>
+            </div>
+            <div class="links">
+              <a
+                href="https://github.com/Francisco-Sole/control_maestro"
+                target="_blank"
+                >Ver en GitHub</a
+              >
+              <a href="https://demo.control-maestro.com">Ver demo</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Tablify</h3>
+            <p>
+              <i>Tablify</i> es una solución web que facilita la gestión de
+              empleados y recursos mediante un calendario y tablas interactivas.
+            </p>
+            <p>
+              Con filtros, buscadores y menús dinámicos, permite visualizar y
+              administrar datos de forma intuitiva, mejorando la experiencia de
+              usuario y la eficiencia en la gestión diaria.
+            </p>
+            <div class="screenshot">
+              <img src="assets/screenshots/tablify.png" alt="Tablify" />
+            </div>
+            <div class="badges">
+              <div class="badge-icon">
+                <img src="assets/badges/PHP.png" alt="PHP" title="PHP" />
+              </div>
+              <div class="badge-icon">
+                <img src="assets/badges/mySql.png" alt="MySQL" title="MySQL" />
+              </div>
+              <div class="badge-icon">
+                <img
+                  src="assets/badges/JS.png"
+                  alt="JavaScript"
+                  title="JavaScript"
+                />
+              </div>
+              <div class="badge-icon">
+                <img src="assets/badges/HTML5.png" alt="HTML5" title="HTML 5" />
+              </div>
+              <div class="badge-icon">
+                <img src="assets/badges/CSS3.png" alt="CSS3" title="CSS 3" />
+              </div>
+            </div>
+            <div class="links">
+              <a
+                href="https://github.com/Francisco-Sole/tablify"
+                target="_blank"
+                >Ver en GitHub</a
+              >
+              <a href="https://demo.tablify.com">Ver demo</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>I-time</h3>
+            <p>
+              <i>I-time</i>i-time facilita el seguimiento de la producción y la
+              gestión de tiempos de trabajo en equipos.
+            </p>
+            <p>
+              Con login de empleados, registro detallado de horas y conexión a
+              un módulo de analítica, ayuda a optimizar procesos y visualizar la
+              productividad de forma clara y estructurada.
+            </p>
+            <div class="screenshot">
+              <img src="assets/screenshots/i-time.png" alt="I-time" />
+            </div>
+            <div class="badges">
+              <div class="badge-icon">
+                <img src="assets/badges/PHP.png" alt="PHP" title="PHP" />
+              </div>
+              <div class="badge-icon">
+                <img src="assets/badges/mySql.png" alt="MySQL" title="MySQL" />
+              </div>
+              <div class="badge-icon">
+                <img
+                  src="assets/badges/JS.png"
+                  alt="JavaScript"
+                  title="JavaScript"
+                />
+              </div>
+              <div class="badge-icon">
+                <img src="assets/badges/HTML5.png" alt="HTML5" title="HTML 5" />
+              </div>
+              <div class="badge-icon">
+                <img src="assets/badges/CSS3.png" alt="CSS3" title="CSS 3" />
+              </div>
+            </div>
+            <div class="links">
+              <a href="https://github.com/Francisco-Sole/i-time" target="_blank"
+                >Ver en GitHub</a
+              >
+              <a href="https://demo.i-time.com">Ver demo</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>I-timeGraph</h3>
+            <p>
+              <i>I-timeGraph</i>convierte los registros de producción en
+              información visual clara y accesible.
+            </p>
+            <p>
+              Con gráficos interactivos y filtros en tiempo real, facilita la
+              toma de decisiones y el seguimiento de la productividad en equipos
+              y proyectos.
+            </p>
+            <div class="screenshot">
+              <img src="assets/screenshots/i-timegraph.png" alt="I-timeGraph" />
+            </div>
+            <div class="badges">
+              <div class="badge-icon">
+                <img src="assets/badges/PHP.png" alt="PHP" title="PHP" />
+              </div>
+              <div class="badge-icon">
+                <img src="assets/badges/mySql.png" alt="MySQL" title="MySQL" />
+              </div>
+              <div class="badge-icon">
+                <img
+                  src="assets/badges/JS.png"
+                  alt="JavaScript"
+                  title="JavaScript"
+                />
+              </div>
+              <div class="badge-icon">
+                <img src="assets/badges/HTML5.png" alt="HTML5" title="HTML 5" />
+              </div>
+              <div class="badge-icon">
+                <img src="assets/badges/CSS3.png" alt="CSS3" title="CSS 3" />
+              </div>
+            </div>
+            <div class="links">
+              <a
+                href="https://github.com/Francisco-Sole/i-timegraph"
+                target="_blank"
+                >Ver en GitHub</a
+              >
+              <a href="https://demo.i-timegraph.com">Ver demo</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Tanke</h3>
+            <p>
+              <i>Tanke</i> es un juego multijugador en tiempo real desarrollado
+              con Node.js y Socket.IO, donde dos jugadores se enfrentan
+              controlando tanques en un escenario compartido.
+            </p>
+            <p>
+              Incluye disparos, detección de colisiones y un sistema de mejora
+              de parámetros (velocidad, cadencia, vida) que añade estrategia a
+              cada partida.
+            </p>
+            <div class="screenshot">
+              <img src="assets/screenshots/tanke.png" alt="Tanke" />
+            </div>
+            <div class="badges">
+              <div class="badge-icon">
+                <img
+                  src="assets/badges/JS.png"
+                  alt="JavaScript"
+                  title="JavaScript"
+                />
+              </div>
+              <div class="badge-icon">
+                <img src="assets/badges/HTML5.png" alt="HTML5" title="HTML 5" />
+              </div>
+            </div>
+            <div class="links">
+              <a href="https://github.com/Francisco-Sole/tanke" target="_blank"
+                >Ver en GitHub</a
+              >
+              <a href="https://tanke.onrender.com/">Ver demo</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Test Trello</h3>
+            <p>
+              <i>Test Trello</i> es un ejercicio práctico para explorar la
+              colaboración en tiempo real con Node.js y Socket.IO.
+            </p>
+            <p>
+              Permite crear y actualizar elementos en un tablero compartido,
+              simulando la experiencia de trabajo en equipo en una aplicación
+              web moderna.
+            </p>
+            <div class="screenshot">
+              <img src="assets/screenshots/test_trello.png" alt="Test Trello" />
+            </div>
+            <div class="badges">
+              <div class="badge-icon">
+                <img
+                  src="assets/badges/node.png"
+                  alt="Node.js"
+                  title="Node.js"
+                />
+              </div>
+              <div class="badge-icon">
+                <img
+                  src="assets/badges/mongo.png"
+                  alt="MongoDB"
+                  title="MongoDB"
+                />
+              </div>
+              <div class="badge-icon">
+                <img
+                  src="assets/badges/JS.png"
+                  alt="JavaScript"
+                  title="JavaScript"
+                />
+              </div>
+              <div class="badge-icon">
+                <img src="assets/badges/HTML5.png" alt="HTML5" title="HTML 5" />
+              </div>
+              <div class="badge-icon">
+                <img src="assets/badges/CSS3.png" alt="CSS3" title="CSS 3" />
+              </div>
+            </div>
+            <div class="links">
+              <a
+                href="https://github.com/Francisco-Sole/test-trello"
+                target="_blank"
+                >Ver en GitHub</a
+              >
+              <a href="https://demo.test-trello.com">Ver demo</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Reloj Analógo</h3>
+            <p>
+              <i>Relej Analógo</i>es un control visual que añade un reloj
+              analógico dinámico a cualquier aplicación de escritorio.
+            </p>
+            <p>
+              Con opciones de personalización y actualización automática, mejora
+              la experiencia de usuario en proyectos WinForms.
+            </p>
+            <div class="screenshot">
+              <img
+                src="assets/screenshots/reloj_analogo.png"
+                alt="Reloj Analógico"
+              />
+            </div>
+            <div class="badges">
+              <div class="badge-icon">
+                <img src="assets/badges/net.png" alt=".NET" title=".NET" />
+              </div>
+              <div class="badge-icon">
+                <img
+                  src="assets/badges/access.png"
+                  alt="Access"
+                  title="Access"
+                />
+              </div>
+            </div>
+            <div class="links">
+              <a
+                href="https://github.com/Francisco-Sole/reloj-analogo"
+                target="_blank"
+                >Ver en GitHub</a
+              >
+              <a href="https://demo.reloj-analogo.com">Ver demo</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Control Fuel</h3>
+            <p>
+              <i>Control Fuel</i>
+              es una solución de gestión de flotas que centraliza el control de
+              mantenimiento, sanciones, viajes e informes en una sola
+              aplicación.
+            </p>
+            <p>
+              El proyecto se entregó en producción, pero aquí se muestra
+              únicamente la beta como referencia de desarrollo.
+            </p>
+            <div class="screenshot">
+              <img
+                src="assets/screenshots/control_fuel.png"
+                alt="Control Fuel"
+              />
+            </div>
+            <div class="badges">
+              <div class="badge-icon">
+                <img src="assets/badges/net.png" alt=".NET" title=".NET" />
+              </div>
+              <div class="badge-icon">
+                <img
+                  src="assets/badges/access.png"
+                  alt="Access"
+                  title="Access"
+                />
+              </div>
+            </div>
+            <div class="links">
+              <a
+                href="https://github.com/Francisco-Sole/control-fuel"
+                target="_blank"
+                >Ver en GitHub</a
+              >
+              <a href="https://demo.control-fuel.com">Ver demo</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Control Almacen</h3>
+            <p>
+              <i>Control Almacen</i>
+              Control Almacén centraliza la gestión de productos, bultos y
+              usuarios en un único sistema de escritorio.
+            </p>
+            <p>
+              Con soporte para imágenes, trazabilidad de operaciones e informes,
+              facilita la organización y el control de inventario en almacenes
+              de cualquier tamaño.
+            </p>
+            <div class="screenshot">
+              <img
+                src="assets/screenshots/control_almacen.png"
+                alt="Control Almacén"
+              />
+            </div>
+            <div class="badges">
+              <div class="badge-icon">
+                <img src="assets/badges/net.png" alt=".NET" title=".NET" />
+              </div>
+              <div class="badge-icon">
+                <img
+                  src="assets/badges/access.png"
+                  alt="Access"
+                  title="Access"
+                />
+              </div>
+            </div>
+            <div class="links">
+              <a
+                href="https://github.com/Francisco-Sole/control-almacen"
+                target="_blank"
+                >Ver en GitHub</a
+              >
+              <a href="https://demo.control-almacen.com">Ver demo</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Web socket (NodeMCU)</h3>
+            <p>
+              <i>Web socket Access Point</i> es un prototipo educativo de IoT
+              que permite controlar dispositivos desde el navegador sin
+              necesidad de router externo.
+            </p>
+            <p>
+              Con una interfaz web sencilla y personalizable, demuestra cómo
+              integrar hardware y software en proyectos conectados.
+            </p>
+            <div class="screenshot">
+              <img src="assets/screenshots/web_socket.png" alt="Web Socket" />
+            </div>
+            <div class="badges">
+              <div class="badge-icon">
+                <img src="assets/badges/c.png" alt="C#" title="C#" />
+              </div>
+            </div>
+            <div class="links">
+              <a
+                href="https://github.com/Francisco-Sole/web_socket-NODEMCU"
+                target="_blank"
+                >Ver en GitHub</a
+              >
+              <a href="https://demo.web_socket-NODEMCU.com">Ver demo</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Control Consumo</h3>
+            <p>
+              <i>Control Consumo</i> es una herramienta ligera para el
+              seguimiento de consumos en entornos domésticos o empresariales.
+            </p>
+            <p>
+              Con reportes variados y almacenamiento en Access, facilita la
+              detección de tendencias y el control de gastos de forma intuitiva.
+            </p>
+            <div class="screenshot">
+              <img
+                src="assets/screenshots/control_consumo.png"
+                alt="Control Consumo"
+              />
+            </div>
+            <div class="badges">
+              <div class="badge-icon">
+                <img src="assets/badges/net.png" alt=".NET" title=".NET" />
+              </div>
+              <div class="badge-icon">
+                <img
+                  src="assets/badges/access.png"
+                  alt="Access"
+                  title="Access"
+                />
+              </div>
+            </div>
+            <div class="links">
+              <a
+                href="https://github.com/Francisco-Sole/control-consumo"
+                target="_blank"
+                >Ver en GitHub</a
+              >
+              <a href="https://demo.control-consumo.com">Ver demo</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CV -->
+      <section id="cv" class="tab-content">
+        <h2>
+          <img src="assets/icons/documento.png" alt="CV" height="36" />
+          Currículum
+          <a
+            class="btnDescarga"
+            href="./assets/CV_Francisco_Sole.pdf"
+            download
+            class="btn"
+            >Descargar CV</a
+          ><a
+            class="btnDescarga"
+            href="./assets/CV_Francisco_Sole _ATS.pdf"
+            download
+            class="btn"
+            >Descargar CV (ATS)</a
+          >
+        </h2>
+        <div id="divCv">
+          <!-- Experiencia profesional -->
+          <div class="cv-block">
+            <h3>Experiencia Profesional</h3>
+
+            <div class="cv-item">
+              <span class="cv-date">2016 – Actualidad</span>
+              <h4>Impackta / WeSherp (Grupo empresarial)</h4>
+              <p><strong>Desarrollador IT Full Stack</strong></p>
+              <p>
+                Evolución desde soporte técnico hasta desarrollador IT,
+                participando en el desarrollo de un SaaS logístico con
+                <span class="badge">React</span>
+                <span class="badge">Node.js</span>
+                <span class="badge">SQL</span>.
+              </p>
+            </div>
+            <hr />
+            <div class="cv-item">
+              <span class="cv-date">2019 – Actualidad</span>
+              <h4>SolucionesSole</h4>
+              <p>
+                <strong
+                  >Fundador · Desarrollo de soluciones tecnológicas</strong
+                >
+              </p>
+              <p>
+                Creación de proyectos propios en <span class="badge">PHP</span>
+                <span class="badge">MySQL</span>
+                <span class="badge">JavaScript</span>, orientados a la
+                automatización y gestión de datos.
+              </p>
+            </div>
+            <hr />
+
+            <div class="cv-item">
+              <span class="cv-date">2012 – 2016</span>
+              <h4>Enimuss & G.E.S</h4>
+              <p><strong>Desarrollador Web y Desktop</strong></p>
+              <p>
+                Proyectos en <span class="badge">.NET</span>
+                <span class="badge">PHP</span>
+                <span class="badge">SQL Server</span>, incluyendo aplicaciones
+                de escritorio y sitios web corporativos.
+              </p>
+            </div>
+            <hr />
+
+            <div class="cv-item">
+              <span class="cv-date">2012 – 2014</span>
+              <h4>Telepizza S.A.U.</h4>
+              <p><strong>Encargado de operaciones y personal</strong></p>
+              <p>
+                Gestión de equipos, operaciones diarias y optimización de
+                procesos internos.
+              </p>
+            </div>
+            <hr />
+
+            <div class="cv-item">
+              <span class="cv-date">2007 – 2010</span>
+              <h4>Reymatex S.A.</h4>
+              <p>
+                <strong
+                  >Producción y programación de maquinaria industrial</strong
+                >
+              </p>
+              <p>
+                Automatización de procesos industriales y programación de
+                maquinaria especializada.
+              </p>
+            </div>
+            <hr />
+          </div>
+
+          <!-- Formación -->
+          <div class="cv-block">
+            <h3>Formación Académica</h3>
+
+            <div class="cv-item">
+              <span class="cv-date">2025 – Actualidad</span>
+              <h4>University of Helsinki</h4>
+              <p>
+                <strong>Full Stack Open</strong> · Desarrollo web moderno con
+                <span class="badge">React</span>
+                <span class="badge">Node.js</span>
+                <span class="badge">REST API</span>.
+              </p>
+            </div>
+            <hr />
+
+            <div class="cv-item">
+              <span class="cv-date">2020 – 2020</span>
+              <h4>Curso de Inglés (200 horas)</h4>
+              <p>
+                Formación intensiva en competencias lingüísticas -
+                <span class="badge">Inglés</span>
+              </p>
+            </div>
+            <hr />
+
+            <div class="cv-item">
+              <span class="cv-date">2014 – 2016</span>
+              <h4>Grado Superior en Desarrollo de Aplicaciones Web</h4>
+              <p>
+                Anna Ravell, Hospitalet. Especialización en
+                <span class="badge">HTML</span> <span class="badge">CSS</span>
+                <span class="badge">JavaScript</span>
+                <span class="badge">PHP</span> <span class="badge">SQL</span>.
+              </p>
+            </div>
+            <hr />
+          </div>
+
+          <!-- Habilidades -->
+          <div class="cv-block-small">
+            <h3>Skills</h3>
+            <p>
+              <span class="badge">React</span>
+              <span class="badge">Node.js</span>
+              <span class="badge">PHP</span>
+              <span class="badge">MySQL</span>
+              <span class="badge">PostgreSQL</span>
+              <span class="badge">SQL Server</span>
+              <span class="badge">VB.NET</span>
+              <span class="badge">Socket.IO</span>
+              <span class="badge">IoT (ESP8266)</span>
+              <span class="badge">IoT (Raspberry Pi)</span>
+              <span class="badge">Linux</span>
+              <span class="badge">Windows</span>
+              <span class="badge">Git</span>
+              <span class="badge">GitHub</span>
+              <span class="badge">GitLab</span>
+              <span class="badge">REST API</span>
+              <span class="badge">JavaScript</span>
+              <span class="badge">TypeScript</span>
+              <span class="badge">HTML5</span>
+              <span class="badge">CSS3</span>
+              <span class="badge">C#</span>
+              <span class="badge">C</span>
+              <span class="badge">Access</span>
+              <span class="badge">MongoDB</span>
+              <span class="badge">jQuery</span>
+              <span class="badge">AJAX</span>
+              <span class="badge">JSON</span>
+              <span class="badge">XML</span>
+              <span class="badge">PL/SQL</span>
+              <span class="badge">Bash</span>
+              <span class="badge">Inglés B1</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sobre mí -->
+      <section id="sobre-mi" class="tab-content">
+        <div id="divSobre-mi">
+          <div class="sobre_mi-block">
+            <h2>
+              <img
+                src="assets/icons/informacion.png"
+                alt="sobre mí"
+                height="36"
+              />
+              Sobre mí
+            </h2>
+            <p>
+              Soy <strong>Francisco Solé González</strong>, desarrollador IT y
+              full stack con más de 9 años de experiencia en proyectos web,
+              desktop y SaaS logísticos. Mi trayectoria empezó en el soporte
+              técnico y ha evolucionado hasta el desarrollo de soluciones
+              completas con <strong>React</strong>, <strong>Node.js</strong> y
+              <strong>SQL</strong>.
+            </p>
+
+            <p>
+              Me apasiona la <strong>documentación clara</strong>, la
+              <strong>optimización de procesos</strong>
+              y la
+              <strong>experiencia de usuario</strong>. Disfruto trabajando en
+              proyectos donde la parte visual y la técnica se combinan para
+              crear productos útiles y bien presentados.
+            </p>
+
+            <p>
+              Además de mi experiencia en empresas como
+              <strong>Impackta</strong> y <strong>WeSherp</strong>, fundé mi
+              propia empresa tecnológica, <strong>SolucionesSole</strong>, lo
+              que me dio una visión global del ciclo de vida de los proyectos y
+              la importancia de la autenticidad en cada paso.
+            </p>
+
+            <p>
+              Actualmente sigo ampliando mi formación en la
+              <strong>Universidad</strong> y en el programa
+              <strong>Full Stack Open</strong> de la University of Helsinki,
+              convencido de que la mejora continua es la clave para crecer como
+              profesional.
+            </p>
+
+            <p>
+              Más allá del software, me interesa la
+              <strong>electrónica y la microelectrónica</strong>. Disfruto
+              experimentando con <strong>Arduino</strong>,
+              <strong>Raspberry Pi</strong> y microcontroladores, integrando
+              hardware y software en proyectos educativos y personales. Esta
+              faceta me permite explorar la tecnología desde una perspectiva más
+              creativa y práctica.
+            </p>
+          </div>
+          <div class="sobre_mi-block cv-timeline">
+            <h2 style="margin-top: 35px">Mi trayectoria</h2>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-date">2025</div>
+                <div class="timeline-content">
+                  <h3>University of Helsinki</h3>
+                  <p>
+                    Inicio del programa <strong>Full Stack Open</strong>,
+                    centrado en desarrollo web moderno con JavaScript, React y
+                    Node.js.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-date">2025</div>
+                <div class="timeline-content">
+                  <h3>WeSherp</h3>
+                  <p>
+                    Más de 9 años en el grupo empresarial (Impackta / WeSherp),
+                    evolucionando hasta desarrollador IT en un SaaS logístico
+                    con React y Node.js.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-date">2019</div>
+                <div class="timeline-content">
+                  <h3>Fundación de SolucionesSole</h3>
+                  <p>
+                    Creación de una empresa propia de soluciones tecnológicas
+                    para pymes.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-date">2016</div>
+                <div class="timeline-content">
+                  <h3>Impackta</h3>
+                  <p>
+                    Desarrollador de software en proyectos de gestión logística
+                    y envíos.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-date">2016</div>
+                <div class="timeline-content">
+                  <h3>Finalización de estudios</h3>
+                  <p>
+                    Graduado Superior en Desarrollo de Aplicaciones Web (DAW).
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-date">2012 – 2016</div>
+                <div class="timeline-content">
+                  <h3>Enimuss & G.E.S</h3>
+                  <p>Desarrollador web y desktop en .NET y PHP.</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-date">2012 – 2014</div>
+                <div class="timeline-content">
+                  <h3>Telepizza</h3>
+                  <p>
+                    Encargado de tienda, gestión de personal y coordinación de
+                    operaciones.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-date">2007 – 2011</div>
+                <div class="timeline-content">
+                  <h3>Reymatex</h3>
+                  <p>
+                    Producción y programación de maquinaria industrial textil.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contacto -->
+      <section id="contacto" class="contact-section tab-content">
+        <h2>
+          <img src="./assets/icons/contacto.png" alt="Contacto" height="36px" />
+          Contacto
+        </h2>
+        <p>
+          Puedes ponerte en contacto conmigo a través de los siguientes medios:
+        </p>
+
+        <ul class="contact-list">
+          <li>
+            <img src="./assets/icons/email.png" alt="Email" height="24px" />
+            <a href="mailto:SRSOLE30687@GMAIL.COM">SRSOLE30687@GMAIL.COM</a>
+          </li>
+          <li>
+            <img
+              src="./assets/icons/linkedin.png"
+              alt="LinkedIn"
+              height="24px"
+            />
+            <a
+              href="https://www.linkedin.com/in/francisco-sole-gonzalez-perfil-publico"
+              target="_blank"
+              >linkedin.com/in/francisco-sole</a
+            >
+          </li>
+          <li>
+            <img src="./assets/icons/github.png" alt="GitHub" height="24px" />
+            <a href="https://github.com/Francisco-Sole" target="_blank"
+              >github.com/Francisco-Sole</a
+            >
+          </li>
+          <li>
+            <a
+              class="centerButton"
+              href="https://wa.me/34633823006?text=Hola%20Francisco,%20he%20visto%20tu%20portafolio"
+              target="_blank"
+              class="btn-whatsapp"
+            >
+              <img
+                src="./assets/icons/social.png"
+                alt="WhatsApp"
+                height="24px"
+              />
+              Escríbeme por WhatsApp
+            </a>
+          </li>
+        </ul>
+      </section>
     </main>
 
     <footer>
-        <p>© 2025 Francisco Solé</p>
+      <p>© 2025 Francisco Solé</p>
     </footer>
 
     <script>
-        //Marcamos por defualt el primer tab
-        openTab('proyectos');
+      //Marcamos por defualt el primer tab
+      openTab("proyectos");
 
-        function openTab(tabId) {
-            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
-            document.getElementById(tabId).classList.add('active');
-            const buttons = document.querySelectorAll('.tab-btn');
-            document.querySelectorAll('.tab-btn').forEach(el => el.style.background = '#444');
+      function openTab(tabId) {
+        document
+          .querySelectorAll(".tab-content")
+          .forEach((el) => el.classList.remove("active"));
+        document.getElementById(tabId).classList.add("active");
+        const buttons = document.querySelectorAll(".tab-btn");
+        document
+          .querySelectorAll(".tab-btn")
+          .forEach((el) => (el.style.background = "#444"));
 
-            buttons.forEach(btn => {
-                btn.addEventListener('mouseenter', () => {
-                    btn.classList.add('hovered');
-                });
+        buttons.forEach((btn) => {
+          btn.addEventListener("mouseenter", () => {
+            btn.classList.add("hovered");
+          });
 
-                btn.addEventListener('mouseleave', () => {
-                    btn.classList.remove('hovered');
-                });
-            });
+          btn.addEventListener("mouseleave", () => {
+            btn.classList.remove("hovered");
+          });
+        });
 
-            document.getElementById("tab-" + tabId).style.background = '#666';
-            requestAnimationFrame(() => {
-                window.scrollTo({ top: 0, left: 0, behavior: "instant" });
-            });
-
-        }
+        document.getElementById("tab-" + tabId).style.background = "#666";
+        requestAnimationFrame(() => {
+          window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+        });
+      }
     </script>
-</body>
-
+  </body>
 </html>
