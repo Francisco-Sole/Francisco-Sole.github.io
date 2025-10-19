@@ -27,10 +27,10 @@ body {
 }
 
 /* Header fijo arriba */
-header {
-    flex: 0 0 auto;
-    /* height: 200px; */
-    background: #1e1e2f;
+/*header {/*
+    /* flex: 0 0 auto; */
+/* height: 200px; */
+/* background: #1e1e2f;
     color: white;
     align-items: center;
     padding: 5px 20px;
@@ -38,8 +38,8 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
-}
+    z-index: 1000; */
+/*}*/
 
 #intro-section {
     display: flex;
@@ -73,16 +73,16 @@ footer {
 
 main {
     position: relative;
-    top: 100px;
+    top: 120px;
     /* height: calc(100vh - 135px - 80px); */
     /* overflow-y: auto; */
     padding: 20px;
 }
 
-.avatar {
+/* .avatar {
     width: 100px;
     border-radius: 50%;
-}
+} */
 
 nav {
     margin-top: 10px;
@@ -183,48 +183,6 @@ section #id>h2>a {
     border: 1px solid #8892bf;
 }
 
-/* MySQL */
-.badge.mysql {
-    color: #00618a;
-    border: 1px solid #00618a;
-}
-
-/* JavaScript */
-.badge.js {
-    color: #f0db4f;
-    border: 1px solid #f0db4f;
-}
-
-/* HTML5 */
-.badge.html {
-    color: #e34f26;
-    border: 1px solid #e34f26;
-}
-
-/* CSS3 */
-.badge.css {
-    color: #264de4;
-    border: 1px solid #264de4;
-}
-
-/* Node.js */
-.badge.node {
-    color: #68a063;
-    border: 1px solid #68a063;
-}
-
-/* Python */
-.badge.python {
-    color: #3776ab;
-    border: 1px solid #3776ab;
-}
-
-/* Git */
-.badge.git {
-    color: #f1502f;
-    border: 1px solid #f1502f;
-}
-
 .links {
     margin-top: 10px;
     display: flex;
@@ -296,54 +254,6 @@ span.badge img {
     /* border-radius: 20px; */
     padding: 12px;
     margin-top: -50px;
-}
-
-/* PHP */
-.badge.php {
-    color: #8892bf;
-    border: 1px solid #8892bf;
-}
-
-/* MySQL */
-.badge.mysql {
-    color: #00618a;
-    border: 1px solid #00618a;
-}
-
-/* JavaScript */
-.badge.js {
-    color: #f0db4f;
-    border: 1px solid #f0db4f;
-}
-
-/* HTML5 */
-.badge.html {
-    color: #e34f26;
-    border: 1px solid #e34f26;
-}
-
-/* CSS3 */
-.badge.css {
-    color: #264de4;
-    border: 1px solid #264de4;
-}
-
-/* Node.js */
-.badge.node {
-    color: #68a063;
-    border: 1px solid #68a063;
-}
-
-/* Python */
-.badge.python {
-    color: #3776ab;
-    border: 1px solid #3776ab;
-}
-
-/* Git */
-.badge.git {
-    color: #f1502f;
-    border: 1px solid #f1502f;
 }
 
 .half-width {
@@ -577,6 +487,87 @@ h2 a {
     margin: 0;
 }
 
+header {
+    background: #1e1e2f;
+    color: white;
+    padding: 7px 20px;
+    top: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+}
+
+.header-grid {
+    display: grid;
+    grid-template-columns: 0px 1fr;
+    gap: 0px;
+    align-items: center;
+    /* max-width: 1000px; */
+    margin: 0 auto;
+    justify-items: center;
+}
+
+.avatar-container {
+    /* display: flex;
+    justify-content: center; */
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #0078d7;
+    position: relative;
+    left: 50%;
+}
+
+.info-block {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+}
+
+.intro-text h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #ccc;
+    margin-top: 6px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+    flex-wrap: wrap;
+}
+
+section>h2 {
+    display: none;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #0078d7;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tab-btn:hover {
+    background-color: #005fa3;
+}
+
+
 
 @media (max-width: 900px) {
     .grid {
@@ -586,6 +577,11 @@ h2 a {
 }
 
 @media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+        margin-top: 50px;
+    }
+
     .timeline-horizontal {
         flex-direction: column;
         align-items: flex-start;
@@ -622,11 +618,37 @@ h2 a {
         margin-bottom: 2rem;
         width: calc(100% / 1) !important;
     }
+
+    .avatar-container {
+        display: none;
+    }
 }
 
 @media (max-width: 600px) {
     .grid {
         grid-template-columns: 1fr;
+        margin-top: 50px;
+    }
+
+    #cv {
+        margin-top: 50px;
+    }
+
+    .sobre_mi-block h2 {
+
+        display: none;
+    }
+
+    .cv-timeline h2 {
+        display: block;
+    }
+
+    #contacto {
+        margin-top: 50px;
+    }
+
+    #stats {
+        margin-top: 50px;
     }
 
     nav {
@@ -702,4 +724,106 @@ h2 a {
         gap: 30px;
         padding: 40px 20px; */
     }
+
+    @media (max-width: 600px) {
+        .header-grid {
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+
+        .avatar-container {
+            display: none;
+        }
+
+        .info-block {
+            align-items: center;
+        }
+
+        .avatar {
+            width: 80px;
+            height: 80px;
+        }
+
+        .intro-text h1 {
+            font-size: 1.6rem;
+        }
+
+        .subtitle {
+            font-size: 0.95rem;
+        }
+
+        .tab-btn {
+            font-size: 0.95rem;
+            padding: 8px 16px;
+        }
+    }
+}
+
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .avatar-container {
+        display: none;
+    }
+
+    .intro-text h1 {
+        float: left;
+        margin-right: 10px;
+    }
+
+    .subtitle {
+        float: left;
+    }
+
+    .header-grid {
+        grid-template-columns: 1fr;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .avatar {
+        width: 80px;
+        height: 80px;
+    }
+
+    .intro-text h1 {
+        font-size: 1.4rem;
+    }
+
+    .subtitle {
+        font-size: 0.9rem;
+    }
+
+    .tab-btn {
+        font-size: 0.9rem;
+        padding: 6px 14px;
+    }
+
+    .tabs {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: -10px
+    }
+
+    .info-block {
+        gap: 10px;
+    }
+
+    main {
+        top: 80px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
+    }
+
+    #stats {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .sobre_mi-block h2 {
+        display: none;
+    }
+
 }

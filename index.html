@@ -3,16 +3,17 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portafolio - Francisco Solé</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=20251019" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
-  <header>
+  <!-- <header>
     <section id="intro-section">
       <div class="avatar-container">
         <img src="assets/avatar.png" alt="Francisco Solé" class="avatar" />
@@ -42,8 +43,29 @@
         </div>
       </section>
     </section>
-  </header>
+  </header> -->
 
+  <header>
+    <div class="header-grid">
+      <div class="avatar-container">
+        <img src="assets/avatar.png" alt="Francisco Solé" class="avatar" />
+      </div>
+
+      <div class="info-block">
+        <div class="intro-text">
+          <h1>Francisco Solé González</h1>
+          <p class="subtitle">Desarrollador Full Stack | Optimización SQL</p>
+        </div>
+
+        <nav class="tabs">
+          <button id="tab-proyectos" class="tab-btn" onclick="openTab('proyectos')">Proyectos</button>
+          <button id="tab-cv" class="tab-btn" onclick="openTab('cv')">Currículum</button>
+          <button id="tab-sobre-mi" class="tab-btn" onclick="openTab('sobre-mi')">Sobre mí</button>
+          <button id="tab-contacto" class="tab-btn" onclick="openTab('contacto')">Contacto</button>
+        </nav>
+      </div>
+    </div>
+  </header>
   <main>
     <!-- Proyectos -->
     <section id="proyectos" class="tab-content active">
