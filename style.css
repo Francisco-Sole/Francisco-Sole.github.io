@@ -111,6 +111,7 @@ nav {
 .tab-content {
     display: none;
     padding: 0px 20px;
+    padding-bottom: 30px;
 }
 
 div.tab-content {
@@ -548,9 +549,7 @@ header {
     flex-wrap: wrap;
 }
 
-section>h2 {
-    display: none;
-}
+
 
 .tab-btn {
     padding: 10px 20px;
@@ -622,6 +621,11 @@ section>h2 {
     .avatar-container {
         display: none;
     }
+
+    section>h2 {
+        display: none;
+    }
+
 }
 
 @media (max-width: 600px) {
@@ -630,8 +634,16 @@ section>h2 {
         margin-top: 50px;
     }
 
+    section>h2 {
+        display: none;
+    }
+
     #cv {
-        margin-top: 50px;
+        margin-top: -50px;
+    }
+
+    #cv>h2 {
+        display: block;
     }
 
     .sobre_mi-block h2 {
@@ -756,6 +768,14 @@ section>h2 {
             font-size: 0.95rem;
             padding: 8px 16px;
         }
+
+        #cv {
+            margin-top: -50px;
+        }
+
+        #divBotonesDescarga {
+            margin-top: 15px;
+        }
     }
 }
 
@@ -826,4 +846,17 @@ section>h2 {
         display: none;
     }
 
+}
+
+@media screen and (max-height: 400px) and (orientation: landscape) {
+    body {
+        min-width: 1024px;
+        /* fuerza layout tipo escritorio */
+        zoom: 0.75;
+        /* opcional: reduce visualmente sin romper el layout */
+    }
+
+    #divBotonesDescarga {
+        margin-top: -75px;
+    }
 }
