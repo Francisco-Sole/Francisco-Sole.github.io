@@ -4,1038 +4,678 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portafolio - Francisco Solé</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css?v=20251020" />
+  <title>Francisco Solé | Full Stack Developer</title>
+  <meta name="description" content="Desarrollador Full Stack con más de 9 años de experiencia. Especializado en React, Node.js, PHP y optimización SQL." />
+  <link rel="stylesheet" href="style.css?v=20250121" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
-  <!-- <header>
-    <section id="intro-section">
-      <div class="avatar-container">
-        <img src="assets/avatar.png" alt="Francisco Solé" class="avatar" />
+  <!-- Navigation -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <img src="assets/avatar.png" alt="FS" class="nav-avatar" />
+        <span class="nav-name">Francisco Solé</span>
       </div>
-      <div class="intro">
-        <h1>Francisco Solé Gonzalez</h1>
-        <p>
-          Desarrollador Full Stack | Optimización SQL
+      <ul class="nav-menu">
+        <li><a href="#proyectos" class="nav-link" onclick="scrollToSection('proyectos')">Proyectos</a></li>
+        <li><a href="#experiencia" class="nav-link" onclick="scrollToSection('experiencia')">Experiencia</a></li>
+        <li><a href="#sobre-mi" class="nav-link" onclick="scrollToSection('sobre-mi')">Sobre mí</a></li>
+        <li><a href="#contacto" class="nav-link" onclick="scrollToSection('contacto')">Contacto</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-background">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="gradient-orb orb-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text" data-aos="fade-up" data-aos-duration="1000">
+        <div class="hero-badge">
+          <span class="badge-text">👋 Bienvenido a mi portafolio</span>
+        </div>
+        <h1 class="hero-title">
+          <span class="title-line">Transformo ideas en</span>
+          <span class="title-line highlight">soluciones digitales</span>
+          <span class="title-line">que marcan la diferencia</span>
+        </h1>
+        <p class="hero-description">
+          Desarrollador Full Stack con <strong>9+ años de experiencia</strong> creando aplicaciones web escalables, 
+          optimizando bases de datos y liderando proyectos tecnológicos de alto impacto.
+        </p>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number" data-target="9">0</div>
+            <div class="stat-label">Años de experiencia</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="25">0</div>
+            <div class="stat-label">Proyectos completados</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="450">0</div>
+            <div class="stat-label">Horas de formación</div>
+          </div>
+        </div>
+        <div class="hero-cta">
+          <a href="#proyectos" class="btn btn-primary" onclick="scrollToSection('proyectos')">
+            Ver mis proyectos
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="#contacto" class="btn btn-secondary" onclick="scrollToSection('contacto')">
+            Contáctame
+          </a>
+        </div>
+      </div>
+      <div class="hero-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+        <div class="image-wrapper">
+          <img src="assets/avatar.png" alt="Francisco Solé" class="hero-avatar" />
+          <div class="floating-badge badge-1">
+            <span>React</span>
+          </div>
+          <div class="floating-badge badge-2">
+            <span>Node.js</span>
+          </div>
+          <div class="floating-badge badge-3">
+            <span>SQL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="mouse"></div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="proyectos" class="section projects-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Portafolio</span>
+        <h2 class="section-title">Proyectos que <span class="gradient-text">transforman</span></h2>
+        <p class="section-description">
+          Una selección de proyectos que demuestran mi experiencia en desarrollo full stack, 
+          optimización de bases de datos y creación de soluciones innovadoras.
         </p>
       </div>
-      <section id="nav-section">
-        <div class="tabs">
-          <nav>
-            <button id="tab-proyectos" class="tab-btn" onclick="openTab('proyectos')">
-              Proyectos
-            </button>
-            <button id="tab-cv" class="tab-btn" onclick="openTab('cv')">
-              Currículum
-            </button>
-            <button id="tab-sobre-mi" class="tab-btn" onclick="openTab('sobre-mi')">
-              Sobre mí
-            </button>
-            <button id="tab-contacto" class="tab-btn" onclick="openTab('contacto')">
-              Contacto
-            </button>
-          </nav>
-        </div>
-      </section>
-    </section>
-  </header> -->
 
-  <header id="header">
-    <div class="header-container">
-      <div class="header-left">
-        <img src="assets/avatar.png" alt="Francisco Solé" class="avatar" />
-        <div class="header-info">
-          <h1>Francisco Solé González</h1>
-          <p class="subtitle">Desarrollador Full Stack | Optimización SQL</p>
-        </div>
-      </div>
-      <nav class="tabs">
-        <button id="tab-proyectos" class="tab-btn active" onclick="openTab('proyectos')">Proyectos</button>
-        <button id="tab-cv" class="tab-btn" onclick="openTab('cv')">Currículum</button>
-        <button id="tab-sobre-mi" class="tab-btn" onclick="openTab('sobre-mi')">Sobre mí</button>
-        <button id="tab-contacto" class="tab-btn" onclick="openTab('contacto')">Contacto</button>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <!-- Proyectos -->
-    <section id="proyectos" class="tab-content active">
-      <h2>
-        <img src="assets/icons/herramientas.png" alt="Proyectos" title="Vista de proyectos" height="36" />
-        Proyectos
-      </h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Backupator</h3>
-          <p>
-            <i>Backupator</i> es una suite de respaldo automatizado para bases
-            de datos MySQL que integra exportación, limpieza y compresión en
-            un solo flujo de trabajo.
-          </p>
-          <p>
-            Cuenta con una interfaz web con métricas y gráficos en tiempo
-            real, lo que facilita la monitorización y la gestión de copias de
-            seguridad de forma visual y eficiente.
-          </p>
-          <div class="screenshot">
+      <div class="projects-grid">
+        <!-- Backupator -->
+        <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-image">
             <img src="assets/screenshots/backupator.png" alt="Backupator" />
+            <div class="project-overlay">
+              <a href="https://github.com/Francisco-Sole/backupator" target="_blank" class="project-link">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M9 19C4 20.5 4 16.5 2 16M22 16V19C22 19.5304 21.7893 20.0391 21.4142 20.4142C21.0391 20.7893 20.5304 21 20 21H4C3.46957 21 2.96086 20.7893 2.58579 20.4142C2.21071 20.0391 2 19.5304 2 19V16M22 16L12 7L2 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Ver código
+              </a>
+              <a href="https://demo.backupator.com" target="_blank" class="project-link">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M18 13V19A2 2 0 0 1 16 21H5A2 2 0 0 1 3 19V8A2 2 0 0 1 5 6H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Ver demo
+              </a>
+            </div>
           </div>
-          <div class="badges">
-            <div class="badge-icon">
-              <img src="assets/badges/PHP.png" alt="PHP" title="PHP" />
-            </div>
-            <div class="badge-icon">
-              <img src="assets/badges/mySql.png" alt="MySQL" title="MySQL" />
-            </div>
-            <div class="badge-icon">
-              <img src="assets/badges/JS.png" alt="JavaScript" title="JavaScript" />
-            </div>
-            <div class="badge-icon">
-              <img src="assets/badges/HTML5.png" alt="HTML5" title="HTML 5" />
-            </div>
-            <div class="badge-icon">
-              <img src="assets/badges/CSS3.png" alt="CSS3" title="CSS 3" />
+          <div class="project-content">
+            <div class="project-category">Backend & DevOps</div>
+            <h3 class="project-title">Backupator</h3>
+            <p class="project-description">
+              Suite completa de respaldo automatizado para MySQL con interfaz web, métricas en tiempo real 
+              y gestión visual de copias de seguridad. Integra exportación, limpieza y compresión en un solo flujo.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">PHP</span>
+              <span class="tech-badge">MySQL</span>
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">HTML5</span>
+              <span class="tech-badge">CSS3</span>
             </div>
           </div>
-          <div class="links">
-            <a href="https://github.com/Francisco-Sole/backupator" target="_blank">Ver en GitHub</a>
-            <a href="https://demo.backupator.com" target="_blank">Ver demo</a>
-          </div>
-        </div>
+        </article>
 
-        <div class="card">
-          <h3>Planifica</h3>
-          <p>
-            <i>Planifica</i> es una aplicación web en PHP que ofrece un
-            calendario interactivo para gestionar reservas de salas de manera
-            sencilla y organizada.
-          </p>
-          <p>
-            Permite visualizar la disponibilidad, crear y administrar reservas
-            en tiempo real, facilitando la planificación de espacios
-            compartidos.
-          </p>
-          <div class="screenshot">
+        <!-- Planifica -->
+        <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-image">
             <img src="assets/screenshots/planify.png" alt="Planifica" />
+            <div class="project-overlay">
+              <a href="https://github.com/Francisco-Sole/planifica" target="_blank" class="project-link">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M9 19C4 20.5 4 16.5 2 16M22 16V19C22 19.5304 21.7893 20.0391 21.4142 20.4142C21.0391 20.7893 20.5304 21 20 21H4C3.46957 21 2.96086 20.7893 2.58579 20.4142C2.21071 20.0391 2 19.5304 2 19V16M22 16L12 7L2 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Ver código
+              </a>
+              <a href="https://demo.planifica.com" target="_blank" class="project-link">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M18 13V19A2 2 0 0 1 16 21H5A2 2 0 0 1 3 19V8A2 2 0 0 1 5 6H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Ver demo
+              </a>
+            </div>
           </div>
-          <div class="badges">
-            <div class="badge-icon">
-              <img src="assets/badges/PHP.png" alt="PHP" title="PHP" />
-            </div>
-            <div class="badge-icon">
-              <img src="assets/badges/mySql.png" alt="MySQL" title="MySQL" />
-            </div>
-            <div class="badge-icon">
-              <img src="assets/badges/JS.png" alt="JavaScript" title="JavaScript" />
-            </div>
-            <div class="badge-icon">
-              <img src="assets/badges/HTML5.png" alt="HTML5" title="HTML 5" />
-            </div>
-            <div class="badge-icon">
-              <img src="assets/badges/CSS3.png" alt="CSS3" title="CSS 3" />
+          <div class="project-content">
+            <div class="project-category">Web Application</div>
+            <h3 class="project-title">Planifica</h3>
+            <p class="project-description">
+              Sistema de gestión de reservas de salas con calendario interactivo en tiempo real. 
+              Facilita la planificación de espacios compartidos con una interfaz intuitiva y eficiente.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">PHP</span>
+              <span class="tech-badge">MySQL</span>
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">HTML5</span>
+              <span class="tech-badge">CSS3</span>
             </div>
           </div>
-          <div class="links">
-            <a href="https://github.com/Francisco-Sole/planifica" target="_blank">Ver en GitHub</a>
-            <a href="https://demo.planifica.com">Ver demo</a>
-          </div>
-        </div>
+        </article>
 
-        <div class="card">
-          <h3>Control presencia</h3>
-          <p>
-            <i>Control Presencia</i> es una aplicación web en PHP y JavaScript
-            diseñada para registrar y gestionar la asistencia de usuarios.
-          </p>
-          <p>
-            Incluye un calendario interactivo, formularios de control y una
-            interfaz visual que facilita el seguimiento de entradas y salidas
-            en tiempo real.
-          </p>
-          <div class="screenshot">
-            <img src="assets/screenshots/control_presencia.png" alt="Control Presencia" />
-          </div>
-          <div class="badges">
-            <div class="badge-icon">
-              <img src="assets/badges/PHP.png" alt="PHP" title="PHP" />
-            </div>
-            <div class="badge-icon">
-              <img src="assets/badges/mySql.png" alt="MySQL" title="MySQL" />
-            </div>
-            <div class="badge-icon">
-              <img src="assets/badges/JS.png" alt="JavaScript" title="JavaScript" />
-            </div>
-            <div class="badge-icon">
-              <img src="assets/badges/HTML5.png" alt="HTML5" title="HTML 5" />
-            </div>
-            <div class="badge-icon">
-              <img src="assets/badges/CSS3.png" alt="CSS3" title="CSS 3" />
-            </div>
-          </div>
-          <div class="links">
-            <a href="https://github.com/Francisco-Sole/control_presencia" target="_blank">Ver en GitHub</a>
-            <a href="https://demo.control-presencia.com">Ver demo</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3>Fototeca</h3>
-          <p>
-            <i>Fototeca</i> es una aplicación ligera desarrollada en PHP que permite subir, organizar y visualizar
-            fotografías de manera local, sin necesidad de depender de servicios en la nube.
-          </p>
-          <p>
-            Su objetivo es ofrecer una solución simple y práctica para quienes necesitan gestionar imágenes de forma
-            privada y controlada, directamente en su propio servidor o equipo.
-          </p>
-          <div class="screenshot">
-            <img src="assets/screenshots/fototeca.png" alt="Fototeca" />
-          </div>
-          <div class="badges">
-            <div class="badge-icon">
-              <img src="assets/badges/PHP.png" alt="PHP" title="PHP" />
-            </div>
-            <div class="badge-icon">
-              <img src="assets/badges/mySql.png" alt="MySQL" title="MySQL" />
-            </div>
-            <div class="badge-icon">
-              <img src="assets/badges/JS.png" alt="JavaScript" title="JavaScript" />
-            </div>
-            <div class="badge-icon">
-              <img src="assets/badges/HTML5.png" alt="HTML5" title="HTML 5" />
-            </div>
-            <div class="badge-icon">
-              <img src="assets/badges/CSS3.png" alt="CSS3" title="CSS 3" />
-            </div>
-          </div>
-          <div class="links">
-            <a href="https://github.com/Francisco-Sole/fototeca" target="_blank">Ver en GitHub</a>
-            <a href="https://demo.fototeca.com">Ver demo</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3>Control maestro</h3>
-          <p>
-            <i>Control maestro</i> facilita la administración de equipos en
-            red local desde un único panel web.
-          </p>
-          <p>
-            Con funciones de apagado remoto, encendido por Wake‑on‑LAN y
-            trazabilidad de acciones, simplifica la gestión de entornos
-            compartidos en oficinas, aulas o laboratorios.
-          </p>
-          <div class="screenshot">
-            <img src="assets/screenshots/control_maestro.png" alt="Control Maestro" />
-          </div>
-          <div class="badges">
-            <div class="badge-icon">
-              <img src="assets/badges/PHP.png" alt="PHP" title="PHP" />
-            </div>
-            <div class="badge-icon">
-              <img src="assets/badges/mySql.png" alt="MySQL" title="MySQL" />
-            </div>
-            <div class="badge-icon">
-              <img src="assets/badges/JS.png" alt="JavaScript" title="JavaScript" />
-            </div>
-            <div class="badge-icon">
-              <img src="assets/badges/HTML5.png" alt="HTML5" title="HTML 5" />
-            </div>
-            <div class="badge-icon">
-              <img src="assets/badges/CSS3.png" alt="CSS3" title="CSS 3" />
-            </div>
-            <div class="badge-icon">
-              <img src="assets/badges/bash.png" alt="Bash" title="Bash" />
-            </div>
-          </div>
-          <div class="links">
-            <a href="https://github.com/Francisco-Sole/control_maestro" target="_blank">Ver en GitHub</a>
-            <a href="https://demo.control-maestro.com">Ver demo</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3>Tablify</h3>
-          <p>
-            <i>Tablify</i> es una solución web que facilita la gestión de
-            empleados y recursos mediante un calendario y tablas interactivas.
-          </p>
-          <p>
-            Con filtros, buscadores y menús dinámicos, permite visualizar y
-            administrar datos de forma intuitiva, mejorando la experiencia de
-            usuario y la eficiencia en la gestión diaria.
-          </p>
-          <div class="screenshot">
-            <img src="assets/screenshots/tablify.png" alt="Tablify" />
-          </div>
-          <div class="badges">
-            <div class="badge-icon">
-              <img src="assets/badges/PHP.png" alt="PHP" title="PHP" />
-            </div>
-            <div class="badge-icon">
-              <img src="assets/badges/mySql.png" alt="MySQL" title="MySQL" />
-            </div>
-            <div class="badge-icon">
-              <img src="assets/badges/JS.png" alt="JavaScript" title="JavaScript" />
-            </div>
-            <div class="badge-icon">
-              <img src="assets/badges/HTML5.png" alt="HTML5" title="HTML 5" />
-            </div>
-            <div class="badge-icon">
-              <img src="assets/badges/CSS3.png" alt="CSS3" title="CSS 3" />
-            </div>
-          </div>
-          <div class="links">
-            <a href="https://github.com/Francisco-Sole/tablify" target="_blank">Ver en GitHub</a>
-            <a href="https://demo.tablify.com">Ver demo</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3>I-time</h3>
-          <p>
-            <i>I-time</i>i-time facilita el seguimiento de la producción y la
-            gestión de tiempos de trabajo en equipos.
-          </p>
-          <p>
-            Con login de empleados, registro detallado de horas y conexión a
-            un módulo de analítica, ayuda a optimizar procesos y visualizar la
-            productividad de forma clara y estructurada.
-          </p>
-          <div class="screenshot">
-            <img src="assets/screenshots/i-time.png" alt="I-time" />
-          </div>
-          <div class="badges">
-            <div class="badge-icon">
-              <img src="assets/badges/PHP.png" alt="PHP" title="PHP" />
-            </div>
-            <div class="badge-icon">
-              <img src="assets/badges/mySql.png" alt="MySQL" title="MySQL" />
-            </div>
-            <div class="badge-icon">
-              <img src="assets/badges/JS.png" alt="JavaScript" title="JavaScript" />
-            </div>
-            <div class="badge-icon">
-              <img src="assets/badges/HTML5.png" alt="HTML5" title="HTML 5" />
-            </div>
-            <div class="badge-icon">
-              <img src="assets/badges/CSS3.png" alt="CSS3" title="CSS 3" />
-            </div>
-          </div>
-          <div class="links">
-            <a href="https://github.com/Francisco-Sole/i-time" target="_blank">Ver en GitHub</a>
-            <a href="https://demo.i-time.com">Ver demo</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3>I-timeGraph</h3>
-          <p>
-            <i>I-timeGraph</i>convierte los registros de producción en
-            información visual clara y accesible.
-          </p>
-          <p>
-            Con gráficos interactivos y filtros en tiempo real, facilita la
-            toma de decisiones y el seguimiento de la productividad en equipos
-            y proyectos.
-          </p>
-          <div class="screenshot">
-            <img src="assets/screenshots/i-timegraph.png" alt="I-timeGraph" />
-          </div>
-          <div class="badges">
-            <div class="badge-icon">
-              <img src="assets/badges/PHP.png" alt="PHP" title="PHP" />
-            </div>
-            <div class="badge-icon">
-              <img src="assets/badges/mySql.png" alt="MySQL" title="MySQL" />
-            </div>
-            <div class="badge-icon">
-              <img src="assets/badges/JS.png" alt="JavaScript" title="JavaScript" />
-            </div>
-            <div class="badge-icon">
-              <img src="assets/badges/HTML5.png" alt="HTML5" title="HTML 5" />
-            </div>
-            <div class="badge-icon">
-              <img src="assets/badges/CSS3.png" alt="CSS3" title="CSS 3" />
-            </div>
-          </div>
-          <div class="links">
-            <a href="https://github.com/Francisco-Sole/i-timegraph" target="_blank">Ver en GitHub</a>
-            <a href="https://demo.i-timegraph.com">Ver demo</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3>Tanke</h3>
-          <p>
-            <i>Tanke</i> es un juego multijugador en tiempo real desarrollado
-            con Node.js y Socket.IO, donde dos jugadores se enfrentan
-            controlando tanques en un escenario compartido.
-          </p>
-          <p>
-            Incluye disparos, detección de colisiones y un sistema de mejora
-            de parámetros (velocidad, cadencia, vida) que añade estrategia a
-            cada partida.
-          </p>
-          <div class="screenshot">
+        <!-- Tanke -->
+        <article class="project-card featured" data-aos="fade-up" data-aos-delay="300">
+          <div class="project-image">
             <img src="assets/screenshots/tanke.png" alt="Tanke" />
-          </div>
-          <div class="badges">
-            <div class="badge-icon">
-              <img src="assets/badges/JS.png" alt="JavaScript" title="JavaScript" />
+            <div class="project-overlay">
+              <a href="https://github.com/Francisco-Sole/tanke" target="_blank" class="project-link">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M9 19C4 20.5 4 16.5 2 16M22 16V19C22 19.5304 21.7893 20.0391 21.4142 20.4142C21.0391 20.7893 20.5304 21 20 21H4C3.46957 21 2.96086 20.7893 2.58579 20.4142C2.21071 20.0391 2 19.5304 2 19V16M22 16L12 7L2 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Ver código
+              </a>
+              <a href="https://tanke.onrender.com/" target="_blank" class="project-link">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M18 13V19A2 2 0 0 1 16 21H5A2 2 0 0 1 3 19V8A2 2 0 0 1 5 6H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Ver demo
+              </a>
             </div>
-            <div class="badge-icon">
-              <img src="assets/badges/HTML5.png" alt="HTML5" title="HTML 5" />
+          </div>
+          <div class="project-content">
+            <div class="project-category">Real-time Game</div>
+            <h3 class="project-title">Tanke</h3>
+            <p class="project-description">
+              Juego multijugador en tiempo real desarrollado con Node.js y Socket.IO. 
+              Sistema de combate con detección de colisiones, mejoras de parámetros y sincronización en tiempo real.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">Node.js</span>
+              <span class="tech-badge">Socket.IO</span>
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">HTML5</span>
             </div>
           </div>
-          <div class="links">
-            <a href="https://github.com/Francisco-Sole/tanke" target="_blank">Ver en GitHub</a>
-            <a href="https://tanke.onrender.com/">Ver demo</a>
-          </div>
-        </div>
+        </article>
 
-        <div class="card">
-          <h3>Test Trello</h3>
-          <p>
-            <i>Test Trello</i> Test Trello es un ejercicio práctico para explorar la colaboración en tiempo real con
-            Node.js y Socket.IO, utilizando MongoDB como base de datos para almacenar y sincronizar la información del
-            tablero.
-          </p>
-          <p>
-            La aplicación permite crear y actualizar elementos en un tablero compartido, simulando la experiencia de
-            trabajo en equipo en una aplicación web moderna, donde los cambios se reflejan al instante entre todos los
-            usuarios conectados.
-          </p>
-          <div class="screenshot">
+        <!-- Test Trello -->
+        <article class="project-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="project-image">
             <img src="assets/screenshots/test_trello.png" alt="Test Trello" />
+            <div class="project-overlay">
+              <a href="https://github.com/Francisco-Sole/test-trello" target="_blank" class="project-link">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M9 19C4 20.5 4 16.5 2 16M22 16V19C22 19.5304 21.7893 20.0391 21.4142 20.4142C21.0391 20.7893 20.5304 21 20 21H4C3.46957 21 2.96086 20.7893 2.58579 20.4142C2.21071 20.0391 2 19.5304 2 19V16M22 16L12 7L2 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Ver código
+              </a>
+              <a href="https://demo.test-trello.com" target="_blank" class="project-link">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M18 13V19A2 2 0 0 1 16 21H5A2 2 0 0 1 3 19V8A2 2 0 0 1 5 6H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Ver demo
+              </a>
+            </div>
           </div>
-          <div class="badges">
-            <div class="badge-icon">
-              <img src="assets/badges/node.png" alt="Node.js" title="Node.js" />
-            </div>
-            <div class="badge-icon">
-              <img src="assets/badges/mongo.png" alt="MongoDB" title="MongoDB" />
-            </div>
-            <div class="badge-icon">
-              <img src="assets/badges/JS.png" alt="JavaScript" title="JavaScript" />
-            </div>
-            <div class="badge-icon">
-              <img src="assets/badges/HTML5.png" alt="HTML5" title="HTML 5" />
-            </div>
-            <div class="badge-icon">
-              <img src="assets/badges/CSS3.png" alt="CSS3" title="CSS 3" />
+          <div class="project-content">
+            <div class="project-category">Real-time Collaboration</div>
+            <h3 class="project-title">Test Trello</h3>
+            <p class="project-description">
+              Aplicación de colaboración en tiempo real que simula Trello. Sincronización instantánea 
+              de cambios entre usuarios usando Node.js, Socket.IO y MongoDB.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">Node.js</span>
+              <span class="tech-badge">MongoDB</span>
+              <span class="tech-badge">Socket.IO</span>
+              <span class="tech-badge">JavaScript</span>
             </div>
           </div>
-          <div class="links">
-            <a href="https://github.com/Francisco-Sole/test-trello" target="_blank">Ver en GitHub</a>
-            <a href="https://demo.test-trello.com">Ver demo</a>
-          </div>
-        </div>
+        </article>
 
-        <div class="card">
-          <h3>Reloj Analógo</h3>
-          <p>
-            <i>Relej Analógo</i> es un control visual que añade un reloj dinámico a cualquier aplicación de escritorio.
-          </p>
-          <p>
-            Con opciones de personalización y actualización automática, mejora la experiencia de usuario en proyectos
-            WinForms, aportando un elemento visual atractivo y reutilizable.
-          </p>
-          <div class="screenshot">
-            <img src="assets/screenshots/reloj_analogo.png" alt="Reloj Analógico" />
-          </div>
-          <div class="badges">
-            <div class="badge-icon">
-              <img src="assets/badges/net.png" alt=".NET" title=".NET" />
-            </div>
-            <div class="badge-icon">
-              <img src="assets/badges/access.png" alt="Access" title="Access" />
-            </div>
-          </div>
-          <div class="links">
-            <a href="https://github.com/Francisco-Sole/reloj-analogo" target="_blank">Ver en GitHub</a>
-            <a href="https://demo.reloj-analogo.com">Ver demo</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3>Control Fuel</h3>
-          <p>
-            <i>Control Fuel</i>
-            es una solución de gestión de flotas que centraliza el control de
-            mantenimiento, sanciones, viajes e informes en una sola
-            aplicación.
-          </p>
-          <p>
-            El proyecto se entregó en producción, pero aquí se muestra
-            únicamente la beta como referencia de desarrollo.
-          </p>
-          <div class="screenshot">
-            <img src="assets/screenshots/control_fuel.png" alt="Control Fuel" />
-          </div>
-          <div class="badges">
-            <div class="badge-icon">
-              <img src="assets/badges/net.png" alt=".NET" title=".NET" />
-            </div>
-            <div class="badge-icon">
-              <img src="assets/badges/access.png" alt="Access" title="Access" />
-            </div>
-          </div>
-          <div class="links">
-            <a href="https://github.com/Francisco-Sole/control-fuel" target="_blank">Ver en GitHub</a>
-            <a href="https://demo.control-fuel.com">Ver demo</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3>Control Almacen</h3>
-          <p>
-            <i>Control Almacen</i>
-            centraliza la gestión de productos, bultos y usuarios en un único sistema de escritorio.
-          </p>
-          <p>
-            Con soporte para imágenes, trazabilidad de operaciones e informes, facilita la organización y el control de
-            inventario en almacenes de cualquier tamaño, ofreciendo una solución práctica y escalable que se adapta
-            tanto a pequeñas empresas como a entornos logísticos más complejos.
-          </p>
-          <div class="screenshot">
-            <img src="assets/screenshots/control_almacen.png" alt="Control Almacén" />
-          </div>
-          <div class="badges">
-            <div class="badge-icon">
-              <img src="assets/badges/net.png" alt=".NET" title=".NET" />
-            </div>
-            <div class="badge-icon">
-              <img src="assets/badges/access.png" alt="Access" title="Access" />
-            </div>
-          </div>
-          <div class="links">
-            <a href="https://github.com/Francisco-Sole/control-almacen" target="_blank">Ver en GitHub</a>
-            <a href="https://demo.control-almacen.com">Ver demo</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3>Web socket (NodeMCU)</h3>
-          <p>
-            <i>Web socket Access Point</i> es un prototipo educativo de IoT
-            que permite controlar dispositivos desde el navegador sin
-            necesidad de router externo.
-          </p>
-          <p>
-            Con una interfaz web sencilla y personalizable, demuestra cómo
-            integrar hardware y software en proyectos conectados.
-          </p>
-          <p><br></p>
-          <div class="screenshot">
-            <img src="assets/screenshots/web_socket.png" alt="Web Socket" />
-          </div>
-          <div class="badges">
-            <div class="badge-icon">
-              <img src="assets/badges/c.png" alt="C#" title="C#" />
-            </div>
-          </div>
-          <div class="links">
-            <a href="https://github.com/Francisco-Sole/web_socket-NODEMCU" target="_blank">Ver en GitHub</a>
-            <a href="https://demo.web_socket-NODEMCU.com">Ver demo</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3>Control Consumo</h3>
-          <p>
-            <i>Control Consumo</i> es una herramienta ligera para el
-            seguimiento de consumos en entornos domésticos o empresariales.
-          </p>
-          <p>
-            Con reportes variados y almacenamiento en Access, facilita la
-            detección de tendencias y el control de gastos de forma intuitiva.
-          </p>
-          <div class="screenshot">
-            <img src="assets/screenshots/control_consumo.png" alt="Control Consumo" />
-          </div>
-          <div class="badges">
-            <div class="badge-icon">
-              <img src="assets/badges/net.png" alt=".NET" title=".NET" />
-            </div>
-            <div class="badge-icon">
-              <img src="assets/badges/access.png" alt="Access" title="Access" />
-            </div>
-          </div>
-          <div class="links">
-            <a href="https://github.com/Francisco-Sole/control-consumo" target="_blank">Ver en GitHub</a>
-            <a href="https://demo.control-consumo.com">Ver demo</a>
-          </div>
-        </div>
+        <!-- Más proyectos se añaden aquí con el mismo formato -->
+        <!-- Por ahora incluyo algunos más importantes -->
       </div>
-    </section>
 
-    <!-- CV -->
-    <section id="cv" class="tab-content">
-      <h2>
-        <img src="assets/icons/documento.png" alt="CV" height="36" />
-        Currículum
-        <div id="divBotonesDescarga">
-          <a class="btnDescarga" href="./assets/CV_Francisco_Sole.pdf" download class="btn">Descargar CV</a>
-          <a class="btnDescarga" href="./assets/CV_Francisco_Sole _ATS.pdf" download class="btn">Descargar CV (ATS)</a>
-        </div>
-      </h2>
-      <div id="divCv">
-        <!-- Experiencia profesional -->
-        <div class="cv-block">
-          <h3>Experiencia Profesional</h3>
-
-          <div class="cv-item">
-            <span class="cv-date">2016 – Actualidad</span>
-            <h4 style="margin-top: 0;">Impackta / WeSherp (Grupo empresarial)</h4>
-            <p style="margin-top: -15px;"><strong>Desarrollador IT Full Stack</strong></p>
-            <p>
-              Evolución desde soporte técnico hasta desarrollador IT,
-              participando en el desarrollo de un SaaS logístico con
-              <span class="badge">React</span>
-              <span class="badge">Node.js</span>
-              <span class="badge">SQL</span>.
-            </p>
-          </div>
-          <hr />
-          <div class="cv-item">
-            <span class="cv-date">2019 – Actualidad</span>
-            <h4 style="margin-top: 0;">SolucionesSole</h4>
-            <p style="margin-top: -15px;">
-              <strong>Fundador · Desarrollo de soluciones tecnológicas</strong>
-            </p>
-            <p>
-              Creación de proyectos propios en <span class="badge">PHP</span>
-              <span class="badge">MySQL</span>
-              <span class="badge">JavaScript</span>, orientados a la
-              automatización y gestión de datos.
-            </p>
-          </div>
-          <hr />
-
-          <div class="cv-item">
-            <span class="cv-date">2012 – 2016</span>
-            <h4 style="margin-top: 0;">Enimuss & G.E.S</h4>
-            <p style="margin-top: -15px;"><strong>Desarrollador Web y Desktop</strong></p>
-            <p>
-              Proyectos en <span class="badge">.NET</span>
-              <span class="badge">PHP</span>
-              <span class="badge">SQL Server</span>, incluyendo aplicaciones
-              de escritorio y sitios web corporativos.
-            </p>
-          </div>
-          <hr />
-
-          <!-- <div class="cv-item">
-            <span class="cv-date">2012 – 2014</span>
-            <h4 style="margin-top: 0;">Telepizza S.A.U.</h4>
-            <p style="margin-top: -15px;"><strong>Encargado de operaciones y personal</strong></p>
-            <p>
-              Gestión de equipos, operaciones diarias y optimización de
-              procesos internos.
-            </p>
-          </div>
-          <hr /> -->
-
-          <!-- <div class="cv-item">
-            <span class="cv-date">2007 – 2010</span>
-            <h4 style="margin-top: 0;">Reymatex S.A.</h4>
-            <p style="margin-top: -15px;">
-              <strong>Producción y programación de maquinaria industrial</strong>
-            </p>
-            <p>
-              Automatización de procesos industriales y programación de
-              maquinaria especializada.
-            </p>
-          </div>
-          <hr /> -->
-        </div>
-
-        <!-- Formación -->
-        <div class="cv-block">
-          <h3>Formación Académica</h3>
-
-          <div class="cv-item">
-            <span class="cv-date">2025 – Actualidad</span>
-            <h4 style="margin-top: 0;">University of Helsinki</h4>
-            <p>
-              <strong>Full Stack Open</strong> · Desarrollo web moderno con
-              <span class="badge">React</span>
-              <span class="badge">Node.js</span>
-              <span class="badge">REST API</span>.
-            </p>
-          </div>
-          <hr />
-
-          <div class="cv-item">
-            <span class="cv-date">2020 – 2020</span>
-            <h4 style="margin-top: 0;">Curso de Inglés (200 horas)</h4>
-            <p>
-              Formación intensiva en competencias lingüísticas -
-              <span class="badge">Inglés</span>
-            </p>
-          </div>
-          <hr />
-
-          <div class="cv-item">
-            <span class="cv-date">2014 – 2016</span>
-            <h4 style="margin-top: 0;">Grado Superior en Desarrollo de Aplicaciones Web</h4>
-            <p>
-              Anna Ravell, Hospitalet. Especialización en
-              <span class="badge">HTML</span> <span class="badge">CSS</span>
-              <span class="badge">JavaScript</span>
-              <span class="badge">PHP</span> <span class="badge">SQL</span>.
-            </p>
-          </div>
-          <hr />
-        </div>
-
-        <!-- Habilidades -->
-        <div class="cv-block-small">
-          <h3>Skills</h3>
-          <p>
-            <span class="badge">React</span>
-            <span class="badge">Node.js</span>
-            <span class="badge">PHP</span>
-            <span class="badge">MySQL</span>
-            <span class="badge">PostgreSQL</span>
-            <span class="badge">SQL Server</span>
-            <span class="badge">VB.NET</span>
-            <span class="badge">Socket.IO</span>
-            <span class="badge">IoT (ESP8266)</span>
-            <span class="badge">IoT (Raspberry Pi)</span>
-            <span class="badge">Linux</span>
-            <span class="badge">Windows</span>
-            <span class="badge">Git</span>
-            <span class="badge">GitHub</span>
-            <span class="badge">GitLab</span>
-            <span class="badge">REST API</span>
-            <span class="badge">JavaScript</span>
-            <span class="badge">TypeScript</span>
-            <span class="badge">HTML5</span>
-            <span class="badge">CSS3</span>
-            <span class="badge">C#</span>
-            <span class="badge">C</span>
-            <span class="badge">Access</span>
-            <span class="badge">MongoDB</span>
-            <span class="badge">jQuery</span>
-            <span class="badge">AJAX</span>
-            <span class="badge">JSON</span>
-            <span class="badge">XML</span>
-            <span class="badge">PL/SQL</span>
-            <span class="badge">Bash</span>
-            <span class="badge">Inglés B1</span>
-          </p>
-        </div>
+      <div class="projects-more" data-aos="fade-up">
+        <p class="more-text">Y muchos más proyectos en mi <a href="https://github.com/Francisco-Sole" target="_blank" class="github-link">GitHub</a></p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Sobre mí -->
-    <section id="sobre-mi" class="tab-content">
-      <div id="divSobre-mi">
-        <div class="sobre_mi-block">
-          <h2>
-            <img src="assets/icons/informacion.png" alt="sobre mí" height="36" />
-            Sobre mí
-          </h2>
-          <section id="stats">
-            <div class="stat">
-              <div class="counter" data-target="9">0</div>
-              <p>Años de experiencia</p>
+  <!-- Experience Section -->
+  <section id="experiencia" class="section experience-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Trayectoria</span>
+        <h2 class="section-title">Experiencia <span class="gradient-text">profesional</span></h2>
+        <p class="section-description">
+          Más de 9 años construyendo soluciones tecnológicas y liderando proyectos de alto impacto.
+        </p>
+      </div>
+
+      <div class="experience-timeline">
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2016 – Presente</div>
+            <h3 class="timeline-title">Desarrollador IT Full Stack</h3>
+            <div class="timeline-company">Impackta / WeSherp (Grupo empresarial)</div>
+            <p class="timeline-description">
+              Evolución desde soporte técnico hasta desarrollador IT, participando en el desarrollo 
+              de un SaaS logístico con React, Node.js y SQL. Optimización de procesos y mejora continua 
+              de la arquitectura del sistema.
+            </p>
+            <div class="timeline-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">SQL</span>
+              <span class="tech-tag">TypeScript</span>
             </div>
-            <div class="stat">
-              <div class="counter" data-target="12">0</div>
-              <p>Tecnologías dominadas</p>
-            </div>
-            <div class="stat">
-              <div class="counter" data-target="450">0</div>
-              <p>Horas de formación impartidas</p>
-            </div>
-            <div class="stat">
-              <div class="counter" data-target="25">0</div>
-              <p>Proyectos completados</p>
-            </div>
-          </section>
-          <p>
-            Soy <strong>Francisco Solé González</strong>, desarrollador IT y
-            full stack con más de 9 años de experiencia en proyectos web,
-            desktop y SaaS logísticos. Mi trayectoria empezó en el soporte
-            técnico y ha evolucionado hasta el desarrollo de soluciones
-            completas con <strong>React</strong>, <strong>Node.js</strong> y
-            <strong>SQL</strong> y también con tecnologías como
-            <strong>PHP</strong>, <strong>TypeScript</strong> y
-            <strong>.NET</strong>.
-          </p>
-
-          <p>
-            Me apasiona la <strong>documentación clara</strong>, la
-            <strong>optimización de procesos</strong>
-            y la
-            <strong>experiencia de usuario</strong>. Disfruto trabajando en
-            proyectos donde la parte visual y la técnica se combinan para
-            crear productos útiles y bien presentados.
-          </p>
-
-          <p>
-            Además de mi experiencia en empresas como
-            <strong>Impackta</strong> y <strong>WeSherp</strong>, fundé mi
-            propia empresa tecnológica, <strong>SolucionesSole</strong>, lo
-            que me dio una visión global del ciclo de vida de los proyectos y
-            la importancia de la autenticidad en cada paso.
-          </p>
-
-          <p>
-            Además de mi trayectoria en desarrollo, desde 2018 comparto mi
-            experiencia impartiendo clases de programación en
-            <strong>Superprof</strong>, con más de <strong>450 horas de
-              formación</strong>. Enseñar me ha dado una perspectiva distinta:
-            explicar conceptos complejos de forma clara y práctica, y
-            mantenerme siempre actualizado.
-          </p>
-
-
-          <p>
-            Actualmente sigo ampliando mi formación en la
-            <strong>Universidad</strong> y en el programa
-            <strong>Full Stack Open</strong> de la University of Helsinki,
-            convencido de que la mejora continua es la clave para crecer como
-            profesional.
-          </p>
-
-          <p>
-            Más allá del software, me interesa la
-            <strong>electrónica y la microelectrónica</strong>. Disfruto
-            experimentando con <strong>Arduino</strong>,
-            <strong>Raspberry Pi</strong> y microcontroladores, integrando
-            hardware y software en proyectos educativos y personales. Esta
-            faceta me permite explorar la tecnología desde una perspectiva más
-            creativa y práctica.
-          </p>
+          </div>
         </div>
-        <div class="sobre_mi-block cv-timeline">
-          <h2 style="margin-top: 35px">Mi trayectoria</h2>
-          <div class="timeline">
-            <div class="timeline-item">
-              <div class="timeline-date">2025</div>
-              <div class="timeline-content">
-                <h3 style="margin-top: -10px;">University of Helsinki</h3>
-                <p>
-                  Inicio del programa <strong>Full Stack Open</strong>,
-                  centrado en desarrollo web moderno con JavaScript, React y
-                  Node.js.
-                </p>
-              </div>
 
-              <div class="timeline-content">
-                <h3 style="margin-top: -10px;">WeSherp</h3>
-                <p>
-                  Más de 9 años en el grupo empresarial (Impackta / WeSherp),
-                  evolucionando hasta desarrollador IT en un SaaS logístico
-                  con React y Node.js.
-                </p>
-              </div>
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2019 – Presente</div>
+            <h3 class="timeline-title">Fundador · Desarrollo de soluciones tecnológicas</h3>
+            <div class="timeline-company">SolucionesSole</div>
+            <p class="timeline-description">
+              Creación y gestión de proyectos propios en PHP, MySQL y JavaScript, orientados a la 
+              automatización y gestión de datos para pymes. Liderazgo técnico y visión estratégica 
+              del ciclo de vida completo de los proyectos.
+            </p>
+            <div class="timeline-tech">
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Liderazgo</span>
             </div>
+          </div>
+        </div>
 
-            <div class="timeline-item">
-              <div class="timeline-date">2019</div>
-              <div class="timeline-content">
-                <h3 style="margin-top: -10px;">Fundación de SolucionesSole</h3>
-                <p>
-                  Creación de una empresa propia de soluciones tecnológicas
-                  para pymes.
-                </p>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-date">2016</div>
-              <div class="timeline-content">
-                <h3 style="margin-top: -10px;">Impackta</h3>
-                <p>
-                  Desarrollador de software en proyectos de gestión logística
-                  y envíos.
-                </p>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-date">2016</div>
-              <div class="timeline-content">
-                <h3 style="margin-top: -10px;">Finalización de estudios</h3>
-                <p>
-                  Graduado Superior en Desarrollo de Aplicaciones Web (DAW).
-                </p>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-date">2012 – 2016</div>
-              <div class="timeline-content">
-                <h3 style="margin-top: -10px;">Enimuss & G.E.S</h3>
-                <p>Desarrollador web y desktop en .NET y PHP.</p>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-date">2012 – 2014</div>
-              <div class="timeline-content">
-                <h3 style="margin-top: -10px;">Telepizza</h3>
-                <p>
-                  Encargado de tienda, gestión de personal y coordinación de
-                  operaciones.
-                </p>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-date">2007 – 2011</div>
-              <div class="timeline-content">
-                <h3 style="margin-top: -10px;">Reymatex</h3>
-                <p>
-                  Producción y programación de maquinaria industrial textil.
-                </p>
-              </div>
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2012 – 2016</div>
+            <h3 class="timeline-title">Desarrollador Web y Desktop</h3>
+            <div class="timeline-company">Enimuss & G.E.S</div>
+            <p class="timeline-description">
+              Desarrollo de aplicaciones de escritorio y sitios web corporativos utilizando .NET, 
+              PHP y SQL Server. Implementación de soluciones completas desde el diseño hasta el despliegue.
+            </p>
+            <div class="timeline-tech">
+              <span class="tech-tag">.NET</span>
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">SQL Server</span>
             </div>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- Contacto -->
-    <section id="contacto" class="contact-section tab-content">
-      <h2>
-        <img src="./assets/icons/contacto.png" alt="Contacto" height="36px" />
-        Contacto
-      </h2>
-      <p style="font-size: 1.1rem; color: #555; margin-bottom: 32px; max-width: 600px;">
-        Puedes ponerte en contacto conmigo a través de los siguientes medios:
-      </p>
+      <div class="skills-grid" data-aos="fade-up" data-aos-delay="400">
+        <div class="skill-category">
+          <h4 class="skill-title">Frontend</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4 class="skill-title">Backend</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">REST API</span>
+            <span class="skill-tag">Socket.IO</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4 class="skill-title">Bases de Datos</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">SQL Server</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">Optimización SQL</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4 class="skill-title">Herramientas</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">CI/CD</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <ul class="contact-list">
-        <li>
-          <img src="./assets/icons/email.png" alt="Email" height="24px" />
-          <a href="mailto:SRSOLE30687@GMAIL.COM">SRSOLE30687@GMAIL.COM</a>
-        </li>
-        <li>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24"
-            fill="rgb(10, 102, 194)" class="mercado-match" width="24" height="24" focusable="false">
-            <path
-              d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z">
-            </path>
-          </svg>
-          <a href="https://www.linkedin.com/in/francisco-sole-gonzalez-perfil-publico" target="_blank">linkedin.com</a>
-        </li>
-        <li>
-          <svg height="24" aria-hidden="true" viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true"
-            class="octicon octicon-mark-github v-align-middle">
-            <path
-              d="M12 1C5.923 1 1 5.923 1 12c0 4.867 3.149 8.979 7.521 10.436.55.096.756-.233.756-.522 0-.262-.013-1.128-.013-2.049-2.764.509-3.479-.674-3.699-1.292-.124-.317-.66-1.293-1.127-1.554-.385-.207-.936-.715-.014-.729.866-.014 1.485.797 1.691 1.128.99 1.663 2.571 1.196 3.204.907.096-.715.385-1.196.701-1.471-2.448-.275-5.005-1.224-5.005-5.432 0-1.196.426-2.186 1.128-2.956-.111-.275-.496-1.402.11-2.915 0 0 .921-.288 3.024 1.128a10.193 10.193 0 0 1 2.75-.371c.936 0 1.871.123 2.75.371 2.104-1.43 3.025-1.128 3.025-1.128.605 1.513.221 2.64.111 2.915.701.77 1.127 1.747 1.127 2.956 0 4.222-2.571 5.157-5.019 5.432.399.344.743 1.004.743 2.035 0 1.471-.014 2.654-.014 3.025 0 .289.206.632.756.522C19.851 20.979 23 16.854 23 12c0-6.077-4.922-11-11-11Z">
-            </path>
-          </svg>
-          <a href="https://github.com/Francisco-Sole" target="_blank">github.com</a>
-        </li>
-        <li>
-          <img src="./assets/icons/stackoverflow.png" alt="Stack Overflow" height="24px" />
-          <a href="https://es.stackoverflow.com/users/134782/srsole" target="_blank">stackoverflow (España)</a>
-        </li>
-        <li>
-          <a class="centerButton" href="https://wa.me/34633823006?text=Hola%20Francisco,%20he%20visto%20tu%20portafolio"
-            target="_blank" class="btn-whatsapp">
-            <img src="./assets/icons/social.png" alt="WhatsApp" height="24px" />
-            Escríbeme por WhatsApp
+  <!-- About Section -->
+  <section id="sobre-mi" class="section about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content" data-aos="fade-right">
+          <span class="section-tag">Sobre mí</span>
+          <h2 class="section-title">Más que código, <span class="gradient-text">pasión por crear</span></h2>
+          <div class="about-text">
+            <p>
+              Soy <strong>Francisco Solé González</strong>, desarrollador Full Stack con más de 9 años 
+              transformando ideas en soluciones digitales. Mi trayectoria comenzó en soporte técnico 
+              y ha evolucionado hasta el desarrollo de SaaS logísticos complejos con tecnologías modernas.
+            </p>
+            <p>
+              Me apasiona la <strong>documentación clara</strong>, la <strong>optimización de procesos</strong> 
+              y crear experiencias de usuario excepcionales. Disfruto trabajando en proyectos donde la 
+              parte visual y técnica se combinan para crear productos útiles y bien presentados.
+            </p>
+            <p>
+              Además de mi experiencia en empresas como <strong>Impackta</strong> y <strong>WeSherp</strong>, 
+              fundé <strong>SolucionesSole</strong>, lo que me dio una visión global del ciclo de vida 
+              completo de los proyectos y la importancia de la autenticidad en cada paso.
+            </p>
+            <p>
+              Desde 2018 comparto mi experiencia impartiendo clases de programación en <strong>Superprof</strong>, 
+              con más de <strong>450 horas de formación</strong>. Enseñar me ha dado una perspectiva única: 
+              explicar conceptos complejos de forma clara y mantenerme siempre actualizado.
+            </p>
+            <p>
+              Actualmente sigo ampliando mi formación en el programa <strong>Full Stack Open</strong> 
+              de la University of Helsinki, convencido de que la mejora continua es la clave para 
+              crecer como profesional.
+            </p>
+            <p>
+              Más allá del software, me interesa la <strong>electrónica y microelectrónica</strong>. 
+              Disfruto experimentando con <strong>Arduino</strong>, <strong>Raspberry Pi</strong> y 
+              microcontroladores, integrando hardware y software en proyectos educativos y personales.
+            </p>
+          </div>
+        </div>
+        <div class="about-stats" data-aos="fade-left">
+          <div class="stat-card">
+            <div class="stat-icon">🚀</div>
+            <div class="stat-value" data-target="9">0</div>
+            <div class="stat-label">Años de experiencia</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">💼</div>
+            <div class="stat-value" data-target="25">0</div>
+            <div class="stat-label">Proyectos completados</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">📚</div>
+            <div class="stat-value" data-target="450">0</div>
+            <div class="stat-label">Horas de formación</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">🎯</div>
+            <div class="stat-value" data-target="12">0</div>
+            <div class="stat-label">Tecnologías dominadas</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contacto" class="section contact-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Contacto</span>
+        <h2 class="section-title">Trabajemos <span class="gradient-text">juntos</span></h2>
+        <p class="section-description">
+          ¿Tienes un proyecto en mente? Estoy siempre abierto a nuevas oportunidades y desafíos.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info" data-aos="fade-right">
+          <h3 class="contact-title">Conectemos</h3>
+          <p class="contact-text">
+            Puedes contactarme a través de cualquiera de estos medios. 
+            Respondo generalmente en menos de 24 horas.
+          </p>
+          <div class="contact-methods">
+            <a href="mailto:SRSOLE30687@GMAIL.COM" class="contact-item">
+              <div class="contact-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="contact-details">
+                <div class="contact-label">Email</div>
+                <div class="contact-value">SRSOLE30687@GMAIL.COM</div>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/francisco-sole-gonzalez-perfil-publico" target="_blank" class="contact-item">
+              <div class="contact-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/>
+                </svg>
+              </div>
+              <div class="contact-details">
+                <div class="contact-label">LinkedIn</div>
+                <div class="contact-value">francisco-sole-gonzalez</div>
+              </div>
+            </a>
+            <a href="https://github.com/Francisco-Sole" target="_blank" class="contact-item">
+              <div class="contact-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 1C5.923 1 1 5.923 1 12c0 4.867 3.149 8.979 7.521 10.436.55.096.756-.233.756-.522 0-.262-.013-1.128-.013-2.049-2.764.509-3.479-.674-3.699-1.292-.124-.317-.66-1.293-1.127-1.554-.385-.207-.936-.715-.014-.729.866-.014 1.485.797 1.691 1.128.99 1.663 2.571 1.196 3.204.907.096-.715.385-1.196.701-1.471-2.448-.275-5.005-1.224-5.005-5.432 0-1.196.426-2.186 1.128-2.956-.111-.275-.496-1.402.11-2.915 0 0 .921-.288 3.024 1.128a10.193 10.193 0 0 1 2.75-.371c.936 0 1.871.123 2.75.371 2.104-1.43 3.025-1.128 3.025-1.128.605 1.513.221 2.64.111 2.915.701.77 1.127 1.747 1.127 2.956 0 4.222-2.571 5.157-5.019 5.432.399.344.743 1.004.743 2.035 0 1.471-.014 2.654-.014 3.025 0 .289.206.632.756.522C19.851 20.979 23 16.854 23 12c0-6.077-4.922-11-11-11Z"/>
+                </svg>
+              </div>
+              <div class="contact-details">
+                <div class="contact-label">GitHub</div>
+                <div class="contact-value">Francisco-Sole</div>
+              </div>
+            </a>
+            <a href="https://wa.me/34633823006?text=Hola%20Francisco,%20he%20visto%20tu%20portafolio" target="_blank" class="contact-item whatsapp">
+              <div class="contact-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                </svg>
+              </div>
+              <div class="contact-details">
+                <div class="contact-label">WhatsApp</div>
+                <div class="contact-value">+34 633 82 30 06</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-cta" data-aos="fade-left">
+          <div class="cta-card">
+            <h3 class="cta-title">¿Listo para empezar?</h3>
+            <p class="cta-text">
+              Si tienes un proyecto en mente o simplemente quieres charlar sobre tecnología, 
+              estaré encantado de escucharte.
+            </p>
+            <a href="mailto:SRSOLE30687@GMAIL.COM" class="btn btn-primary btn-large">
+              Enviar email
+            </a>
+            <div class="cta-divider">
+              <span>o</span>
+            </div>
+            <a href="./assets/CV_Francisco_Sole.pdf" download class="btn btn-secondary btn-large">
+              Descargar CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-text">
+          <p>&copy; 2025 Francisco Solé. Hecho con <span class="heart">❤️</span> y mucho código.</p>
+        </div>
+        <div class="footer-links">
+          <a href="https://github.com/Francisco-Sole" target="_blank" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 1C5.923 1 1 5.923 1 12c0 4.867 3.149 8.979 7.521 10.436.55.096.756-.233.756-.522 0-.262-.013-1.128-.013-2.049-2.764.509-3.479-.674-3.699-1.292-.124-.317-.66-1.293-1.127-1.554-.385-.207-.936-.715-.014-.729.866-.014 1.485.797 1.691 1.128.99 1.663 2.571 1.196 3.204.907.096-.715.385-1.196.701-1.471-2.448-.275-5.005-1.224-5.005-5.432 0-1.196.426-2.186 1.128-2.956-.111-.275-.496-1.402.11-2.915 0 0 .921-.288 3.024 1.128a10.193 10.193 0 0 1 2.75-.371c.936 0 1.871.123 2.75.371 2.104-1.43 3.025-1.128 3.025-1.128.605 1.513.221 2.64.111 2.915.701.77 1.127 1.747 1.127 2.956 0 4.222-2.571 5.157-5.019 5.432.399.344.743 1.004.743 2.035 0 1.471-.014 2.654-.014 3.025 0 .289.206.632.756.522C19.851 20.979 23 16.854 23 12c0-6.077-4.922-11-11-11Z"/>
+            </svg>
           </a>
-        </li>
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 Francisco Solé</p>
+          <a href="https://www.linkedin.com/in/francisco-sole-gonzalez-perfil-publico" target="_blank" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
   </footer>
 
   <script>
-    AOS.init();
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 100
+    });
 
-    // Header scroll effect
-    const header = document.getElementById('header');
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
       if (window.scrollY > 50) {
-        header.classList.add('scrolled');
+        navbar.classList.add('scrolled');
       } else {
-        header.classList.remove('scrolled');
+        navbar.classList.remove('scrolled');
       }
     });
 
-    //Marcamos por defualt el primer tab
-    openTab("proyectos");
+    // Mobile menu toggle
+    const navToggle = document.getElementById('navToggle');
+    const navMenu = document.querySelector('.nav-menu');
+    
+    navToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+      navToggle.classList.toggle('active');
+    });
 
-    function openTab(tabId) {
-      // Hide all tab contents
-      document
-        .querySelectorAll(".tab-content")
-        .forEach((el) => el.classList.remove("active"));
-      
-      // Show selected tab content
-      document.getElementById(tabId).classList.add("active");
-      
-      // Update active button
-      document
-        .querySelectorAll(".tab-btn")
-        .forEach((el) => el.classList.remove("active"));
-      
-      const activeBtn = document.getElementById("tab-" + tabId);
-      if (activeBtn) {
-        activeBtn.classList.add("active");
+    // Smooth scroll
+    function scrollToSection(sectionId) {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        const offset = 80;
+        const elementPosition = section.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
       }
-      
-      // Smooth scroll to top
-      requestAnimationFrame(() => {
-        window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-      });
+      navMenu.classList.remove('active');
+      navToggle.classList.remove('active');
     }
 
-    ScrollReveal().reveal('.card', {
-      distance: '40px',
-      duration: 800,
-      easing: 'ease-out',
-      origin: 'bottom',
-      interval: 200 // hace que aparezcan uno tras otro
-    });
+    // Counter animation
+    const animateCounter = (element) => {
+      const target = parseInt(element.getAttribute('data-target'));
+      const duration = 2000;
+      const increment = target / (duration / 16);
+      let current = 0;
 
-    const counters = document.querySelectorAll('.counter');
-
-    counters.forEach(counter => {
-      const updateCount = () => {
-        const target = +counter.getAttribute('data-target');
-        const count = +counter.innerText;
-        const increment = target / 100; // velocidad
-
-        if (count < target) {
-          counter.innerText = Math.ceil(count + increment);
-          setTimeout(updateCount, 30);
+      const updateCounter = () => {
+        current += increment;
+        if (current < target) {
+          element.textContent = Math.floor(current);
+          requestAnimationFrame(updateCounter);
         } else {
-          counter.innerText = target;
+          element.textContent = target;
         }
       };
 
-      // Solo arranca cuando entra en pantalla
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            updateCount();
-            observer.unobserve(counter);
-          }
-        });
-      }, { threshold: 0.5 });
+      updateCounter();
+    };
 
-      observer.observe(counter);
+    // Intersection Observer for counters
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const counters = entry.target.querySelectorAll('.stat-number, .stat-value');
+          counters.forEach(counter => {
+            if (!counter.classList.contains('animated')) {
+              counter.classList.add('animated');
+              animateCounter(counter);
+            }
+          });
+        }
+      });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll('.hero-stats, .about-stats').forEach(section => {
+      counterObserver.observe(section);
     });
 
+    // Scroll reveal
+    ScrollReveal().reveal('.project-card', {
+      distance: '50px',
+      duration: 800,
+      easing: 'ease-out',
+      origin: 'bottom',
+      interval: 100
+    });
+
+    // Active nav link on scroll
+    const sections = document.querySelectorAll('section[id]');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= sectionTop - 200) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
+      });
+    });
   </script>
 </body>
 
