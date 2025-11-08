@@ -45,25 +45,21 @@
     </section>
   </header> -->
 
-  <header>
-    <div class="header-grid">
-      <div class="avatar-container">
+  <header id="header">
+    <div class="header-container">
+      <div class="header-left">
         <img src="assets/avatar.png" alt="Francisco Solé" class="avatar" />
-      </div>
-
-      <div class="info-block">
-        <div class="intro-text">
+        <div class="header-info">
           <h1>Francisco Solé González</h1>
           <p class="subtitle">Desarrollador Full Stack | Optimización SQL</p>
         </div>
-
-        <nav class="tabs">
-          <button id="tab-proyectos" class="tab-btn" onclick="openTab('proyectos')">Proyectos</button>
-          <button id="tab-cv" class="tab-btn" onclick="openTab('cv')">Currículum</button>
-          <button id="tab-sobre-mi" class="tab-btn" onclick="openTab('sobre-mi')">Sobre mí</button>
-          <button id="tab-contacto" class="tab-btn" onclick="openTab('contacto')">Contacto</button>
-        </nav>
       </div>
+      <nav class="tabs">
+        <button id="tab-proyectos" class="tab-btn active" onclick="openTab('proyectos')">Proyectos</button>
+        <button id="tab-cv" class="tab-btn" onclick="openTab('cv')">Currículum</button>
+        <button id="tab-sobre-mi" class="tab-btn" onclick="openTab('sobre-mi')">Sobre mí</button>
+        <button id="tab-contacto" class="tab-btn" onclick="openTab('contacto')">Contacto</button>
+      </nav>
     </div>
   </header>
   <main>
@@ -916,7 +912,7 @@
         <img src="./assets/icons/contacto.png" alt="Contacto" height="36px" />
         Contacto
       </h2>
-      <p>
+      <p style="font-size: 1.1rem; color: #555; margin-bottom: 32px; max-width: 600px;">
         Puedes ponerte en contacto conmigo a través de los siguientes medios:
       </p>
 
@@ -965,32 +961,41 @@
   <script>
     AOS.init();
 
+    // Header scroll effect
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
     //Marcamos por defualt el primer tab
     openTab("proyectos");
 
     function openTab(tabId) {
+      // Hide all tab contents
       document
         .querySelectorAll(".tab-content")
         .forEach((el) => el.classList.remove("active"));
+      
+      // Show selected tab content
       document.getElementById(tabId).classList.add("active");
-      const buttons = document.querySelectorAll(".tab-btn");
+      
+      // Update active button
       document
         .querySelectorAll(".tab-btn")
-        .forEach((el) => (el.style.background = "#444"));
-
-      buttons.forEach((btn) => {
-        btn.addEventListener("mouseenter", () => {
-          btn.classList.add("hovered");
-        });
-
-        btn.addEventListener("mouseleave", () => {
-          btn.classList.remove("hovered");
-        });
-      });
-
-      document.getElementById("tab-" + tabId).style.background = "#666";
+        .forEach((el) => el.classList.remove("active"));
+      
+      const activeBtn = document.getElementById("tab-" + tabId);
+      if (activeBtn) {
+        activeBtn.classList.add("active");
+      }
+      
+      // Smooth scroll to top
       requestAnimationFrame(() => {
-        window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+        window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
       });
     }
 
